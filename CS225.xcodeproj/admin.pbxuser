@@ -1,0 +1,229 @@
+// !$*UTF8*$!
+{
+	08FB7793FE84155DC02AAC07 /* Project object */ = {
+		activeArchitecturePreference = i386;
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 841F4CA41198A4E700F742D2 /* CS225 */;
+		activeTarget = 8DD76F620486A84900D96B5E /* CS225 */;
+		addToTargets = (
+			8DD76F620486A84900D96B5E /* CS225 */,
+		);
+		breakpoints = (
+		);
+		codeSenseManager = 841F4CAA1198A50500F742D2 /* Code sense */;
+		executables = (
+			841F4CA41198A4E700F742D2 /* CS225 */,
+		);
+		perUserDictionary = {
+			"PBXConfiguration.PBXBreakpointsDataSource.v1:1CA1AED706398EBD00589147" = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXBreakpointsDataSource_BreakpointID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					20,
+					198,
+					20,
+					99,
+					99,
+					29,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXBreakpointsDataSource_ActionID,
+					PBXBreakpointsDataSource_TypeID,
+					PBXBreakpointsDataSource_BreakpointID,
+					PBXBreakpointsDataSource_UseID,
+					PBXBreakpointsDataSource_LocationID,
+					PBXBreakpointsDataSource_ConditionID,
+					PBXBreakpointsDataSource_IgnoreCountID,
+					PBXBreakpointsDataSource_ContinueID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXExecutablesDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXExecutablesDataSource_NameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					22,
+					300,
+					909.58349609375,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXExecutablesDataSource_ActiveFlagID,
+					PBXExecutablesDataSource_NameID,
+					PBXExecutablesDataSource_CommentsID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					1022,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 295707426;
+			PBXWorkspaceStateSaveDate = 295707426;
+		};
+		perUserProjectItems = {
+			841E475C119F66C3005F4038 = 841E475C119F66C3005F4038 /* PBXTextBookmark */;
+			841E486D119F8E4B005F4038 = 841E486D119F8E4B005F4038 /* PBXTextBookmark */;
+			841E486E119F8E4B005F4038 = 841E486E119F8E4B005F4038 /* PBXTextBookmark */;
+			841E486F119F8E4B005F4038 = 841E486F119F8E4B005F4038 /* PBXTextBookmark */;
+			841E4874119F8EDB005F4038 = 841E4874119F8EDB005F4038 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 841F4CA91198A50500F742D2 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	08FB7796FE84155DC02AAC07 /* main.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1200, 1751}}";
+			sepNavSelRange = "{239, 0}";
+			sepNavVisRange = "{71, 793}";
+			sepNavWindowFrame = "{{0, 95}, {1440, 778}}";
+		};
+	};
+	841E475C119F66C3005F4038 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 841E475D119F66C3005F4038 /* main.cpp */;
+		name = "main.cpp: 142";
+		rLen = 1025;
+		rLoc = 3958;
+		rType = 0;
+		vrLen = 1361;
+		vrLoc = 3692;
+	};
+	841E475D119F66C3005F4038 /* main.cpp */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.cpp.cpp;
+		name = main.cpp;
+		path = "/Users/admin/Documents/XCode Projects/OpenCV/AviVideo/main.cpp";
+		sourceTree = "<absolute>";
+	};
+	841E47A8119F6ABD005F4038 /* tracker.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1200, 1139}}";
+			sepNavSelRange = "{1188, 0}";
+			sepNavVisRange = "{673, 645}";
+			sepNavWindowFrame = "{{15, 63}, {613, 815}}";
+		};
+	};
+	841E47A9119F6ABD005F4038 /* tracker.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1200, 2295}}";
+			sepNavSelRange = "{3048, 0}";
+			sepNavVisRange = "{250, 663}";
+			sepNavWindowFrame = "{{827, 63}, {613, 815}}";
+		};
+	};
+	841E486D119F8E4B005F4038 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* main.cpp */;
+		name = "main.cpp: 11";
+		rLen = 0;
+		rLoc = 239;
+		rType = 0;
+		vrLen = 793;
+		vrLoc = 71;
+	};
+	841E486E119F8E4B005F4038 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 841E47A8119F6ABD005F4038 /* tracker.h */;
+		name = "tracker.h: 61";
+		rLen = 0;
+		rLoc = 1188;
+		rType = 0;
+		vrLen = 645;
+		vrLoc = 673;
+	};
+	841E486F119F8E4B005F4038 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 841E47A9119F6ABD005F4038 /* tracker.cpp */;
+		name = "tracker.cpp: 30";
+		rLen = 0;
+		rLoc = 463;
+		rType = 0;
+		vrLen = 660;
+		vrLoc = 294;
+	};
+	841E4874119F8EDB005F4038 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 841E47A9119F6ABD005F4038 /* tracker.cpp */;
+		name = "tracker.cpp: 129";
+		rLen = 0;
+		rLoc = 3048;
+		rType = 0;
+		vrLen = 663;
+		vrLoc = 250;
+	};
+	841F4CA41198A4E700F742D2 /* CS225 */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+			NO,
+			NO,
+		);
+		argumentStrings = (
+			"-s",
+			"-v",
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = CS225;
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+		variableFormatDictionary = {
+		};
+	};
+	841F4CA91198A50500F742D2 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "Google SVN";
+			};
+		};
+	};
+	841F4CAA1198A50500F742D2 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	8DD76F620486A84900D96B5E /* CS225 */ = {
+		activeExec = 0;
+		executables = (
+			841F4CA41198A4E700F742D2 /* CS225 */,
+		);
+	};
+}

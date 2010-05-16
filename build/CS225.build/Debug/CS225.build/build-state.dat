@@ -1,0 +1,354 @@
+TCS225
+v7
+r0
+t295707497.616584
+cCheck dependencies
+cCompileC build/CS225.build/Debug/CS225.build/Objects-normal/i386/main.o "/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC build/CS225.build/Debug/CS225.build/Objects-normal/i386/tracker.o "/Users/admin/Documents/XCode Projects/OpenCV/CS225/tracker.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+cLd "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug/CS225" normal i386
+
+N/Developer/SDKs/MacOSX10.6.sdk
+c000000004A769DAB00000000000000EE
+t1249287595
+s238
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/alloca.h
+c000000004A5C14A60000000000000588
+t1247548582
+s1416
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/assert.h
+c000000004A5C14A60000000000000DCB
+t1247548582
+s3531
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/ctype.h
+c000000004A5C14A60000000000002C18
+t1247548582
+s11288
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/math.h
+c000000004A5C14A000000000000004F1
+t1247548576
+s1265
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/stdio.h
+c000000004A5C14A70000000000004174
+t1247548583
+s16756
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/stdlib.h
+c000000004A5C14A70000000000002DF5
+t1247548583
+s11765
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/string.h
+c000000004A5C14A70000000000001731
+t1247548583
+s5937
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/emmintrin.h
+c000000004A11EB24000000000000EA8F
+t1242688292
+s60047
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/float.h
+c000000004A11EB240000000000001538
+t1242688292
+s5432
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/limits.h
+c000000004A11EB240000000000000C7E
+t1242688292
+s3198
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/mmintrin.h
+c000000004A11EB240000000000009260
+t1242688292
+s37472
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/omp.h
+c000000004A1199040000000000000AE9
+t1242667268
+s2793
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stdint.h
+c000000004A11EB24000000000000190C
+t1242688292
+s6412
+
+N/Users/admin/Documents/XCode Projects/OpenCV/CS225/Tracker.cpp
+c000000004BEF355E0000000000000178
+t1273967966
+s376
+i"Tracker.h"
+
+N/Users/admin/Documents/XCode Projects/OpenCV/CS225/Tracker.h
+c000000004BEF363D000000000000021D
+t1273968189
+s541
+
+N/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/Objects-normal/i386/CS225.LinkFileList
+c000000004BEF36EA00000000000000E7
+t1273968362
+s231
+
+N/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/Objects-normal/i386/Tracker.o
+t2
+s0
+
+N/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/Objects-normal/i386/main.o
+t1273976409
+s59916
+
+N/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/Objects-normal/i386/tracker.o
+t1273976514
+s63732
+
+N/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/Objects-normal/x86_64/CS225.LinkFileList
+c000000004BE871970000000000000074
+t1273524631
+s116
+
+N/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/Objects-normal/x86_64/main.o
+t1273524732
+s95748
+
+N/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug/CS225
+t1273976514
+s24704
+
+N/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp
+c000000004BEF53DE000000000000092C
+t1273975774
+s2348
+i<iostream>
+i<OpenCV/cv.h>
+i<OpenCV/highgui.h>
+i<stdio.h>
+i<ctype.h>
+i"tracker.h"
+
+N/Users/admin/Documents/XCode Projects/OpenCV/CS225/tracker.cpp
+c000000004BEF56BF0000000000000C3D
+t1273976511
+s3133
+i"tracker.h"
+i<OpenCV/cv.h>
+i<OpenCV/highgui.h>
+
+N/Users/admin/Documents/XCode Projects/OpenCV/CS225/tracker.h
+c000000004BEF56570000000000000526
+t1273976407
+s1318
+i<OpenCV/cv.h>
+i<OpenCV/highgui.h>
+
+N/Users/admin/Library/Frameworks/OpenCV.framework/Headers/cv.h
+c000000004B248E4D0000000000011693
+t1260686925
+s71315
+i<chdl.h>
+i"cxcore.h"
+i"cvtypes.h"
+i"cv.hpp"
+i"cvcompat.h"
+
+N/Users/admin/Library/Frameworks/OpenCV.framework/Headers/cv.hpp
+c000000004B248E4D000000000000AB79
+t1260686925
+s43897
+
+N/Users/admin/Library/Frameworks/OpenCV.framework/Headers/cvcompat.h
+c000000004B248E4D0000000000009EE6
+t1260686925
+s40678
+i<string.h>
+
+N/Users/admin/Library/Frameworks/OpenCV.framework/Headers/cvtypes.h
+c000000004B248E4E00000000000030D7
+t1260686926
+s12503
+i<assert.h>
+i<stdlib.h>
+
+N/Users/admin/Library/Frameworks/OpenCV.framework/Headers/cvver.h
+c000000004B248E4E00000000000009EA
+t1260686926
+s2538
+
+N/Users/admin/Library/Frameworks/OpenCV.framework/Headers/cxcore.h
+c000000004B248E4E00000000000155CA
+t1260686926
+s87498
+i"ipl.h"
+i"ipl/ipl.h"
+i"cxtypes.h"
+i"cxerror.h"
+i"cvver.h"
+i"cxcore.hpp"
+
+N/Users/admin/Library/Frameworks/OpenCV.framework/Headers/cxcore.hpp
+c000000004B248E4E0000000000013E4E
+t1260686926
+s81486
+i"cxmisc.h"
+i<algorithm>
+i<cmath>
+i<complex>
+i<map>
+i<new>
+i<string>
+i<vector>
+i"cxoperations.hpp"
+i"cxmat.hpp"
+i"cxflann.h"
+
+N/Users/admin/Library/Frameworks/OpenCV.framework/Headers/cxerror.h
+c000000004B248E4E0000000000002235
+t1260686926
+s8757
+
+N/Users/admin/Library/Frameworks/OpenCV.framework/Headers/cxflann.h
+c000000004B248E4E0000000000001B19
+t1260686926
+s6937
+
+N/Users/admin/Library/Frameworks/OpenCV.framework/Headers/cxmat.hpp
+c000000004B248E4E0000000000025125
+t1260686926
+s151845
+i<limits.h>
+
+N/Users/admin/Library/Frameworks/OpenCV.framework/Headers/cxmisc.h
+c000000004B248E4E0000000000006D9D
+t1260686926
+s28061
+i"cvconfig.h"
+i<limits.h>
+i"omp.h"
+i<malloc.h>
+i<alloca.h>
+i<stdlib.h>
+
+N/Users/admin/Library/Frameworks/OpenCV.framework/Headers/cxoperations.hpp
+c000000004B248E4E00000000000150B6
+t1260686926
+s86198
+i<string.h>
+i<limits.h>
+i<ext/atomicity.h>
+i<bits/atomicity.h>
+i"windows.h"
+
+N/Users/admin/Library/Frameworks/OpenCV.framework/Headers/cxtypes.h
+c000000004B248E4E000000000000CF7E
+t1260686926
+s53118
+i<assert.h>
+i<stdlib.h>
+i<string.h>
+i<float.h>
+i<stdint.h>
+i<emmintrin.h>
+i<mmintrin.h>
+i<fastmath.h>
+i<math.h>
+i<ipl.h>
+i<ipl/ipl.h>
+
+N/Users/admin/Library/Frameworks/OpenCV.framework/Headers/highgui.h
+c000000004B248E4E00000000000046F5
+t1260686926
+s18165
+i"cxcore.h"
+i<windows.h>
+i<chdl.h>
+i"highgui.hpp"
+
+N/Users/admin/Library/Frameworks/OpenCV.framework/Headers/highgui.hpp
+c000000004B248E4E000000000000120D
+t1260686926
+s4621
+
+N/Users/admin/Library/Frameworks/OpenCV.framework/OpenCV
+c000000004B24907A0000000000F10034
+t1260687482
+s15794228
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies295707497#295707497#0(0"0(0#1#0"7947009927035180032#0"0#
+
+CCompileC build/CS225.build/Debug/CS225.build/Objects-normal/i386/Tracker.o "/Users/admin/Documents/XCode Projects/OpenCV/CS225/Tracker.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/CS225.build/Debug/CS225.build/Objects-normal/i386/main.o "/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+s295669208.181313
+e295669209.320810
+r1
+xCompileC
+xbuild/CS225.build/Debug/CS225.build/Objects-normal/i386/main.o
+x/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+o/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp: In function 'int main(int, char* const*)':
+o/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp:12: warning: deprecated conversion from string constant to 'char*'
+o/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp:13: warning: deprecated conversion from string constant to 'char*'
+lSLF07#2@67"Compile /Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp295669208#295669209#0(358"/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp: In function 'int main(int, char* const*)':/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp:12: warning: deprecated conversion from string constant to 'char*'/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp:13: warning: deprecated conversion from string constant to 'char*'2(22@53"Deprecated conversion from string constant to 'char*'295669209#104#127#0(6@59"/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp295668574#12#0#12#0#49"deprecated conversion from string constant to '*'0(22@53"Deprecated conversion from string constant to 'char*'295669209#231#127#0(6@59"/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp295668574#13#0#13#0#49"deprecated conversion from string constant to '*'0(0#0#59"/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp4300882208#1536"    cd "/Users/admin/Documents/XCode Projects/OpenCV/CS225"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D_GLIBCXX_DEBUG=1 -D_GLIBCXX_DEBUG_PEDANTIC=1 -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-generated-files.hmap" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-own-target-headers.hmap" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-all-target-headers.hmap" -iquote "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-project-headers.hmap" "-F/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug" "-F/Users/admin/Documents/XCode Projects/OpenCV/CS225/../../../../Library/Frameworks" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug/include" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/DerivedSources/i386" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/DerivedSources" -c "/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp" -o "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/Objects-normal/i386/main.o"0#
+
+CCompileC build/CS225.build/Debug/CS225.build/Objects-normal/i386/tracker.o "/Users/admin/Documents/XCode Projects/OpenCV/CS225/tracker.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+s295669313.164503
+e295669314.210170
+r1
+xCompileC
+xbuild/CS225.build/Debug/CS225.build/Objects-normal/i386/tracker.o
+x/Users/admin/Documents/XCode Projects/OpenCV/CS225/tracker.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@70"Compile /Users/admin/Documents/XCode Projects/OpenCV/CS225/tracker.cpp295669313#295669314#0(0"0(0#0#62"/Users/admin/Documents/XCode Projects/OpenCV/CS225/tracker.cpp4300882208#1542"    cd "/Users/admin/Documents/XCode Projects/OpenCV/CS225"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D_GLIBCXX_DEBUG=1 -D_GLIBCXX_DEBUG_PEDANTIC=1 -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-generated-files.hmap" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-own-target-headers.hmap" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-all-target-headers.hmap" -iquote "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-project-headers.hmap" "-F/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug" "-F/Users/admin/Documents/XCode Projects/OpenCV/CS225/../../../../Library/Frameworks" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug/include" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/DerivedSources/i386" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/DerivedSources" -c "/Users/admin/Documents/XCode Projects/OpenCV/CS225/tracker.cpp" -o "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/Objects-normal/i386/tracker.o"0#
+
+CCompileC build/CS225.build/Debug/CS225.build/Objects-normal/x86_64/main.o "/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp" normal x86_64 c++ com.apple.compilers.gcc.4_2
+s295217530.941684
+e295217532.028404
+r1
+xCompileC
+xbuild/CS225.build/Debug/CS225.build/Objects-normal/x86_64/main.o
+x/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@67"Compile /Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp295217530#295217532#0(0"0(0#0#59"/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp4300882208#1542"    cd "/Users/admin/Documents/XCode Projects/OpenCV/CS225"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D_GLIBCXX_DEBUG=1 -D_GLIBCXX_DEBUG_PEDANTIC=1 -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-generated-files.hmap" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-own-target-headers.hmap" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-all-target-headers.hmap" -iquote "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-project-headers.hmap" "-F/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug" "-F/Users/admin/Documents/XCode Projects/OpenCV/CS225/../../../../Library/Frameworks" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug/include" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/DerivedSources/x86_64" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/DerivedSources" -c "/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp" -o "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/Objects-normal/x86_64/main.o"0#
+
+CLd "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug/CS225" normal i386
+s295669314.210292
+e295669314.237201
+r1
+xLd
+x/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug/CS225
+xnormal
+xi386
+lSLF07#2@73"Link /Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug/CS225295669314#295669314#0(0"0(0#0#0"4300882208#660"    cd "/Users/admin/Documents/XCode Projects/OpenCV/CS225"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/g++-4.2 -arch i386 -isysroot /Developer/SDKs/MacOSX10.6.sdk "-L/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug" "-F/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug" "-F/Users/admin/Documents/XCode Projects/OpenCV/CS225/../../../../Library/Frameworks" -filelist "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/Objects-normal/i386/CS225.LinkFileList" -mmacosx-version-min=10.6 -framework OpenCV -o "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug/CS225"0#
+
+CLd "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug/CS225" normal x86_64
+s295217532.028501
+e295217532.054956
+r0
+xLd
+x/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug/CS225
+xnormal
+xx86_64
+old: warning: in /Users/admin/Library/Frameworks/OpenCV.framework/OpenCV, missing required architecture x86_64 in file
+oUndefined symbols:
+o  "_cvCreateCameraCapture", referenced from:
+o      processArgs(int, char* const*)in main.o
+o      processArgs(int, char* const*)in main.o
+old: symbol(s) not found
+ocollect2: ld returned 1 exit status
+lSLF07#2@73"Link /Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug/CS225295217532#295217532#0(334"ld: warning: in /Users/admin/Library/Frameworks/OpenCV.framework/OpenCV, missing required architecture x86_64 in fileUndefined symbols:  "_cvCreateCameraCapture", referenced from:      processArgs(int, char* const*)in main.o      processArgs(int, char* const*)in main.old: symbol(s) not foundcollect2: ld returned 1 exit status6(22@104"In /Users/admin/Library/Frameworks/OpenCV.framework/OpenCV, missing required architecture x86_64 in file295217532#0#118#0(6@0"295217532#0#0#0#0#0"0(4@42""_cvCreateCameraCapture", referenced from:295217532#137#45#0(6@0"295217532#0#0#0#0#0"0(13@39"ProcessArgs(int, char* const*)in main.o295217532#182#46#0(6@0"295217532#0#0#0#0#0"0(13@39"ProcessArgs(int, char* const*)in main.o295217532#228#46#0(6@0"295217532#0#0#0#0#0"0(13@19"Symbol(s) not found295217532#274#24#0(6@0"295217532#0#0#0#0#0"0(13@35"Collect2: ld returned 1 exit status295217532#298#36#0(6@0"295217532#0#0#0#0#0"0(0#0#0"4300882208#664"    cd "/Users/admin/Documents/XCode Projects/OpenCV/CS225"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/g++-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk "-L/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug" "-F/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug" "-F/Users/admin/Documents/XCode Projects/OpenCV/CS225/../../../../Library/Frameworks" -filelist "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/Objects-normal/x86_64/CS225.LinkFileList" -mmacosx-version-min=10.6 -framework OpenCV -o "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug/CS225"1#
+

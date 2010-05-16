@@ -1,0 +1,58 @@
+TCS225
+v7
+r0
+t295217433.950107
+cCheck dependencies
+cCompileC build/CS225.build/Debug/CS225.build/Objects-normal/x86_64/main.o "/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp" normal x86_64 c++ com.apple.compilers.gcc.4_2
+
+N/Developer/SDKs/MacOSX10.6.sdk
+c000000004A769DAB00000000000000EE
+t1249287595
+s238
+
+N/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/Objects-normal/x86_64/CS225.LinkFileList
+c000000004BE871970000000000000074
+t1273524631
+s116
+
+N/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/Objects-normal/x86_64/main.o
+t2
+s0
+
+N/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug/CS225
+t2
+s0
+
+N/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp
+c000000004BE87196000000000000022F
+t1273524630
+s559
+i<iostream>
+
+N/Users/admin/Library/Frameworks/OpenCV.framework/OpenCV
+c000000004B24907A0000000000F10034
+t1260687482
+s15794228
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies295217431#295217431#0(0"0(0#1#0"7947009927035180032#0"0#
+
+CCompileC build/CS225.build/Debug/CS225.build/Objects-normal/x86_64/main.o "/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp" normal x86_64 c++ com.apple.compilers.gcc.4_2
+s295217431.868664
+e295217433.949760
+r0
+xCompileC
+xbuild/CS225.build/Debug/CS225.build/Objects-normal/x86_64/main.o
+x/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.gcc.4_2
+o/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp: In function 'void processArgs(int, char* const*)':
+o/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp:35: error: invalid operands of types 'char*' and 'const char [2]' to binary 'operator+'
+lSLF07#2@67"Compile /Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp295217431#295217433#0(260"/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp: In function 'void processArgs(int, char* const*)':/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp:35: error: invalid operands of types 'char*' and 'const char [2]' to binary 'operator+'1(4@76"Invalid operands of types 'char*' and 'const char [2]' to binary 'operator+'295217433#112#148#0(6@59"/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp295217430#35#0#35#0#0"0(0#0#59"/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp3907004821821025792#1542"    cd "/Users/admin/Documents/XCode Projects/OpenCV/CS225"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D_GLIBCXX_DEBUG=1 -D_GLIBCXX_DEBUG_PEDANTIC=1 -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-generated-files.hmap" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-own-target-headers.hmap" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-all-target-headers.hmap" -iquote "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-project-headers.hmap" "-F/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug" "-F/Users/admin/Documents/XCode Projects/OpenCV/CS225/../../../../Library/Frameworks" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug/include" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/DerivedSources/x86_64" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/DerivedSources" -c "/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp" -o "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/Objects-normal/x86_64/main.o"1#
+
+CLd "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug/CS225" normal x86_64
+r0
+
