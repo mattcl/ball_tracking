@@ -1,7 +1,7 @@
 TCS225
 v7
 r0
-t295707497.616584
+t295712523.093158
 cCheck dependencies
 cCompileC build/CS225.build/Debug/CS225.build/Objects-normal/i386/main.o "/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
 cCompileC build/CS225.build/Debug/CS225.build/Objects-normal/i386/tracker.o "/Users/admin/Documents/XCode Projects/OpenCV/CS225/tracker.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
@@ -98,12 +98,12 @@ t2
 s0
 
 N/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/Objects-normal/i386/main.o
-t1273976409
-s59916
+t1274019599
+s60348
 
 N/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/Objects-normal/i386/tracker.o
-t1273976514
-s63732
+t1274019723
+s68444
 
 N/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/Objects-normal/x86_64/CS225.LinkFileList
 c000000004BE871970000000000000074
@@ -115,13 +115,13 @@ t1273524732
 s95748
 
 N/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug/CS225
-t1273976514
-s24704
+t1274019723
+s29996
 
 N/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp
-c000000004BEF53DE000000000000092C
-t1273975774
-s2348
+c000000004BEFFE24000000000000095B
+t1274019364
+s2395
 i<iostream>
 i<OpenCV/cv.h>
 i<OpenCV/highgui.h>
@@ -130,17 +130,17 @@ i<ctype.h>
 i"tracker.h"
 
 N/Users/admin/Documents/XCode Projects/OpenCV/CS225/tracker.cpp
-c000000004BEF56BF0000000000000C3D
-t1273976511
-s3133
+c000000004BEFFF890000000000001021
+t1274019721
+s4129
 i"tracker.h"
 i<OpenCV/cv.h>
 i<OpenCV/highgui.h>
 
 N/Users/admin/Documents/XCode Projects/OpenCV/CS225/tracker.h
-c000000004BEF56570000000000000526
-t1273976407
-s1318
+c000000004BEFFEC000000000000005CD
+t1274019520
+s1485
 i<OpenCV/cv.h>
 i<OpenCV/highgui.h>
 
@@ -278,14 +278,14 @@ s15794228
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies295707497#295707497#0(0"0(0#1#0"7947009927035180032#0"0#
+lSLF07#2@18"Check dependencies295712521#295712522#0(0"0(0#1#0"4300882208#0"0#
 
 CCompileC build/CS225.build/Debug/CS225.build/Objects-normal/i386/Tracker.o "/Users/admin/Documents/XCode Projects/OpenCV/CS225/Tracker.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
 r0
 
 CCompileC build/CS225.build/Debug/CS225.build/Objects-normal/i386/main.o "/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
-s295669208.181313
-e295669209.320810
+s295712398.674837
+e295712399.819460
 r1
 xCompileC
 xbuild/CS225.build/Debug/CS225.build/Objects-normal/i386/main.o
@@ -297,11 +297,11 @@ xcom.apple.compilers.gcc.4_2
 o/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp: In function 'int main(int, char* const*)':
 o/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp:12: warning: deprecated conversion from string constant to 'char*'
 o/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp:13: warning: deprecated conversion from string constant to 'char*'
-lSLF07#2@67"Compile /Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp295669208#295669209#0(358"/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp: In function 'int main(int, char* const*)':/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp:12: warning: deprecated conversion from string constant to 'char*'/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp:13: warning: deprecated conversion from string constant to 'char*'2(22@53"Deprecated conversion from string constant to 'char*'295669209#104#127#0(6@59"/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp295668574#12#0#12#0#49"deprecated conversion from string constant to '*'0(22@53"Deprecated conversion from string constant to 'char*'295669209#231#127#0(6@59"/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp295668574#13#0#13#0#49"deprecated conversion from string constant to '*'0(0#0#59"/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp4300882208#1536"    cd "/Users/admin/Documents/XCode Projects/OpenCV/CS225"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D_GLIBCXX_DEBUG=1 -D_GLIBCXX_DEBUG_PEDANTIC=1 -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-generated-files.hmap" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-own-target-headers.hmap" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-all-target-headers.hmap" -iquote "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-project-headers.hmap" "-F/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug" "-F/Users/admin/Documents/XCode Projects/OpenCV/CS225/../../../../Library/Frameworks" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug/include" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/DerivedSources/i386" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/DerivedSources" -c "/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp" -o "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/Objects-normal/i386/main.o"0#
+lSLF07#2@67"Compile /Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp295712398#295712399#0(358"/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp: In function 'int main(int, char* const*)':/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp:12: warning: deprecated conversion from string constant to 'char*'/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp:13: warning: deprecated conversion from string constant to 'char*'2(22@53"Deprecated conversion from string constant to 'char*'295712399#104#127#0(6@59"/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp295712164#12#0#12#0#49"deprecated conversion from string constant to '*'0(22@53"Deprecated conversion from string constant to 'char*'295712399#231#127#0(6@59"/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp295712164#13#0#13#0#49"deprecated conversion from string constant to '*'0(0#0#59"/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp4300882208#1536"    cd "/Users/admin/Documents/XCode Projects/OpenCV/CS225"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D_GLIBCXX_DEBUG=1 -D_GLIBCXX_DEBUG_PEDANTIC=1 -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-generated-files.hmap" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-own-target-headers.hmap" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-all-target-headers.hmap" -iquote "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-project-headers.hmap" "-F/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug" "-F/Users/admin/Documents/XCode Projects/OpenCV/CS225/../../../../Library/Frameworks" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug/include" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/DerivedSources/i386" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/DerivedSources" -c "/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp" -o "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/Objects-normal/i386/main.o"0#
 
 CCompileC build/CS225.build/Debug/CS225.build/Objects-normal/i386/tracker.o "/Users/admin/Documents/XCode Projects/OpenCV/CS225/tracker.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
-s295669313.164503
-e295669314.210170
+s295712522.019578
+e295712523.064597
 r1
 xCompileC
 xbuild/CS225.build/Debug/CS225.build/Objects-normal/i386/tracker.o
@@ -310,7 +310,7 @@ xnormal
 xi386
 xc++
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@70"Compile /Users/admin/Documents/XCode Projects/OpenCV/CS225/tracker.cpp295669313#295669314#0(0"0(0#0#62"/Users/admin/Documents/XCode Projects/OpenCV/CS225/tracker.cpp4300882208#1542"    cd "/Users/admin/Documents/XCode Projects/OpenCV/CS225"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D_GLIBCXX_DEBUG=1 -D_GLIBCXX_DEBUG_PEDANTIC=1 -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-generated-files.hmap" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-own-target-headers.hmap" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-all-target-headers.hmap" -iquote "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-project-headers.hmap" "-F/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug" "-F/Users/admin/Documents/XCode Projects/OpenCV/CS225/../../../../Library/Frameworks" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug/include" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/DerivedSources/i386" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/DerivedSources" -c "/Users/admin/Documents/XCode Projects/OpenCV/CS225/tracker.cpp" -o "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/Objects-normal/i386/tracker.o"0#
+lSLF07#2@70"Compile /Users/admin/Documents/XCode Projects/OpenCV/CS225/tracker.cpp295712522#295712523#0(0"0(0#0#62"/Users/admin/Documents/XCode Projects/OpenCV/CS225/tracker.cpp4300882208#1542"    cd "/Users/admin/Documents/XCode Projects/OpenCV/CS225"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D_GLIBCXX_DEBUG=1 -D_GLIBCXX_DEBUG_PEDANTIC=1 -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-generated-files.hmap" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-own-target-headers.hmap" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-all-target-headers.hmap" -iquote "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-project-headers.hmap" "-F/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug" "-F/Users/admin/Documents/XCode Projects/OpenCV/CS225/../../../../Library/Frameworks" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug/include" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/DerivedSources/i386" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/DerivedSources" -c "/Users/admin/Documents/XCode Projects/OpenCV/CS225/tracker.cpp" -o "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/Objects-normal/i386/tracker.o"0#
 
 CCompileC build/CS225.build/Debug/CS225.build/Objects-normal/x86_64/main.o "/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp" normal x86_64 c++ com.apple.compilers.gcc.4_2
 s295217530.941684
@@ -326,14 +326,14 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@67"Compile /Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp295217530#295217532#0(0"0(0#0#59"/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp4300882208#1542"    cd "/Users/admin/Documents/XCode Projects/OpenCV/CS225"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D_GLIBCXX_DEBUG=1 -D_GLIBCXX_DEBUG_PEDANTIC=1 -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-generated-files.hmap" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-own-target-headers.hmap" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-all-target-headers.hmap" -iquote "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-project-headers.hmap" "-F/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug" "-F/Users/admin/Documents/XCode Projects/OpenCV/CS225/../../../../Library/Frameworks" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug/include" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/DerivedSources/x86_64" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/DerivedSources" -c "/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp" -o "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/Objects-normal/x86_64/main.o"0#
 
 CLd "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug/CS225" normal i386
-s295669314.210292
-e295669314.237201
+s295712523.064699
+e295712523.093107
 r1
 xLd
 x/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug/CS225
 xnormal
 xi386
-lSLF07#2@73"Link /Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug/CS225295669314#295669314#0(0"0(0#0#0"4300882208#660"    cd "/Users/admin/Documents/XCode Projects/OpenCV/CS225"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/g++-4.2 -arch i386 -isysroot /Developer/SDKs/MacOSX10.6.sdk "-L/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug" "-F/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug" "-F/Users/admin/Documents/XCode Projects/OpenCV/CS225/../../../../Library/Frameworks" -filelist "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/Objects-normal/i386/CS225.LinkFileList" -mmacosx-version-min=10.6 -framework OpenCV -o "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug/CS225"0#
+lSLF07#2@73"Link /Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug/CS225295712523#295712523#0(0"0(0#0#0"4300882208#660"    cd "/Users/admin/Documents/XCode Projects/OpenCV/CS225"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/g++-4.2 -arch i386 -isysroot /Developer/SDKs/MacOSX10.6.sdk "-L/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug" "-F/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug" "-F/Users/admin/Documents/XCode Projects/OpenCV/CS225/../../../../Library/Frameworks" -filelist "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/Objects-normal/i386/CS225.LinkFileList" -mmacosx-version-min=10.6 -framework OpenCV -o "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug/CS225"0#
 
 CLd "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug/CS225" normal x86_64
 s295217532.028501

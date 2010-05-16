@@ -23,7 +23,13 @@ public:
 	void processMostRecentFrame();
 	void handleSelectionEvents();
 	void displayImage();
+	void printTrackedObjectProperties();
 	void cleanUp();
+	
+	float getDx();
+	float getDy();
+	CvPoint2D32f getCenter();
+	
 	
 	static CvScalar hsv2rgb( float hue ) {
 		int rgb[3], p, sector;
@@ -55,7 +61,12 @@ private:
 	
 	CvRect track_window;
 	CvBox2D track_box;
+	CvBox2D last_track_box;
 	CvConnectedComp track_comp;
+	
+	int first_iter;
+	float dx;
+	float dy;
 	
 	int hdims;
 	float hranges_arr[2];

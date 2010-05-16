@@ -30,6 +30,10 @@ Tracker::Tracker(char* mname, int cameraIndex, CvMouseCallback on_mouse) {
 	hranges_arr[0] = 0;
 	hranges_arr[1] = 180;
 	
+	first_iter = 1;
+	dx = 0;
+	dy = 0;
+	
 	// set up the camera capture/window/trackbars
 	capture = cvCaptureFromCAM(cameraIndex);
 	cvNamedWindow(name, 0);
@@ -94,9 +98,27 @@ void Tracker::processMostRecentFrame() {
 		cvCalcBackProject(&(hue), backproject, hist);
 		cvAnd(backproject, mask, backproject, 0);
 		
+		cvCamShift(backproject, track_window, cvTermCriteria(CV_TERMCRIT_EPS | CV_TERMCRIT_ITER, 10, 1), &track_comp, &track_box);
+		track_window = track_comp.rect;
+		
+		
+		// draw the backprojection only
 		if (true) {
 			cvCvtColor(backproject, img, CV_GRAY2BGR);
 		}
+		
+		// draw a circle around the center of the object
+		cvCircle(img, cvPointFrom32f(track_box.center), 10, CV_RGB(225, 0, 0), 1, CV_AA, 0);
+		
+		if (!first_iter) {
+			// compute dx and dy for this iteration
+			dx = track_box.center.x - last_track_box.center.x;
+			dy = track_box.center.y - last_track_box.center.y;
+		} else {
+			first_iter = 0;
+		}
+		
+		last_track_box = track_box;
 	}
 }
 
@@ -112,9 +134,29 @@ void Tracker::displayImage() {
 	cvShowImage(name, img);
 }
 
+void Tracker::printTrackedObjectProperties() {
+	if (track_object) {
+		printf("%s: Object at (%f, %f), dx = %f, dy = %f\n", name, track_box.center.x, track_box.center.y, dx, dy );
+	}
+}
+
 void Tracker::cleanUp() {
 	cvReleaseCapture(&capture);
 	cvDestroyWindow(name);
+}
+
+float Tracker::getDx() {
+	return dx;
+}
+
+float Tracker::getDy() {
+	return dy;
+}
+
+CvPoint2D32f Tracker::getCenter() {
+	if(track_object)
+		return track_box.center;
+	return cvPoint2D32f(0, 0);
 }
 
 // Private Methods
