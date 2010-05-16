@@ -1,10 +1,11 @@
 TCS225
 v7
 r0
-t295712523.093158
+t295745930.635099
 cCheck dependencies
 cCompileC build/CS225.build/Debug/CS225.build/Objects-normal/i386/main.o "/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
 cCompileC build/CS225.build/Debug/CS225.build/Objects-normal/i386/tracker.o "/Users/admin/Documents/XCode Projects/OpenCV/CS225/tracker.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC build/CS225.build/Debug/CS225.build/Objects-normal/i386/client.o "/Users/admin/Documents/XCode Projects/OpenCV/CS225/client.c" normal i386 c com.apple.compilers.gcc.4_2
 cLd "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug/CS225" normal i386
 
 N/Developer/SDKs/MacOSX10.6.sdk
@@ -32,6 +33,16 @@ c000000004A5C14A000000000000004F1
 t1247548576
 s1265
 
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/netdb.h
+c000000004A4181220000000000003057
+t1245806882
+s12375
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/netinet/in.h
+c000000004A73D64C000000000000539D
+t1249105484
+s21405
+
 N/Developer/SDKs/MacOSX10.6.sdk/usr/include/stdio.h
 c000000004A5C14A70000000000004174
 t1247548583
@@ -46,6 +57,16 @@ N/Developer/SDKs/MacOSX10.6.sdk/usr/include/string.h
 c000000004A5C14A70000000000001731
 t1247548583
 s5937
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/sys/socket.h
+c000000004A73D65400000000000059BC
+t1249105492
+s22972
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/sys/types.h
+c000000004A73D6550000000000002905
+t1249105493
+s10501
 
 N/Developer/SDKs/MacOSX10.6.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/emmintrin.h
 c000000004A11EB24000000000000EA8F
@@ -89,39 +110,62 @@ t1273968189
 s541
 
 N/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/Objects-normal/i386/CS225.LinkFileList
-c000000004BEF36EA00000000000000E7
-t1273968362
-s231
+c000000004BF0620F000000000000015B
+t1274044943
+s347
 
 N/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/Objects-normal/i386/Tracker.o
 t2
 s0
 
+N/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/Objects-normal/i386/client.o
+t1274052648
+s5436
+
 N/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/Objects-normal/i386/main.o
-t1274019599
-s60348
+t1274052649
+s65772
 
 N/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/Objects-normal/i386/tracker.o
-t1274019723
-s68444
+t1274052528
+s76692
 
 N/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/Objects-normal/x86_64/CS225.LinkFileList
-c000000004BE871970000000000000074
-t1273524631
-s116
+c000000004BF061B600000000000000EB
+t1274044854
+s235
 
 N/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/Objects-normal/x86_64/main.o
-t1273524732
-s95748
+t1274044855
+s63540
+
+N/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/Objects-normal/x86_64/tracker.o
+t1274044855
+s76420
 
 N/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug/CS225
-t1274019723
-s29996
+t1274052649
+s37416
+
+N/Users/admin/Documents/XCode Projects/OpenCV/CS225/client.c
+c000000004BF080260000000000000505
+t1274052646
+s1285
+i<sys/types.h>
+i<sys/socket.h>
+i<netinet/in.h>
+i<netdb.h>
+i<stdio.h>
+
+N/Users/admin/Documents/XCode Projects/OpenCV/CS225/client.o
+c000000004BF060DB0000000000000888
+t1274044635
+s2184
 
 N/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp
-c000000004BEFFE24000000000000095B
-t1274019364
-s2395
+c000000004BF080070000000000000FDD
+t1274052615
+s4061
 i<iostream>
 i<OpenCV/cv.h>
 i<OpenCV/highgui.h>
@@ -130,17 +174,17 @@ i<ctype.h>
 i"tracker.h"
 
 N/Users/admin/Documents/XCode Projects/OpenCV/CS225/tracker.cpp
-c000000004BEFFF890000000000001021
-t1274019721
-s4129
+c000000004BF07F670000000000001833
+t1274052455
+s6195
 i"tracker.h"
 i<OpenCV/cv.h>
 i<OpenCV/highgui.h>
 
 N/Users/admin/Documents/XCode Projects/OpenCV/CS225/tracker.h
-c000000004BEFFEC000000000000005CD
-t1274019520
-s1485
+c000000004BF07F7400000000000007C2
+t1274052468
+s1986
 i<OpenCV/cv.h>
 i<OpenCV/highgui.h>
 
@@ -278,14 +322,40 @@ s15794228
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies295712521#295712522#0(0"0(0#1#0"4300882208#0"0#
+lSLF07#2@18"Check dependencies295745930#295745930#0(0"0(0#1#0"4300882208#0"0#
 
 CCompileC build/CS225.build/Debug/CS225.build/Objects-normal/i386/Tracker.o "/Users/admin/Documents/XCode Projects/OpenCV/CS225/Tracker.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
 r0
 
+CCompileC build/CS225.build/Debug/CS225.build/Objects-normal/i386/client.o "/Users/admin/Documents/XCode Projects/OpenCV/CS225/client.c" normal i386 c com.apple.compilers.gcc.4_2
+s295745448.311197
+e295745448.804831
+r1
+xCompileC
+xbuild/CS225.build/Debug/CS225.build/Objects-normal/i386/client.o
+x/Users/admin/Documents/XCode Projects/OpenCV/CS225/client.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+o/Users/admin/Documents/XCode Projects/OpenCV/CS225/client.c: In function 'error':
+o/Users/admin/Documents/XCode Projects/OpenCV/CS225/client.c:11: warning: implicit declaration of function 'exit'
+o/Users/admin/Documents/XCode Projects/OpenCV/CS225/client.c:11: warning: incompatible implicit declaration of built-in function 'exit'
+o/Users/admin/Documents/XCode Projects/OpenCV/CS225/client.c: In function 'connect_client':
+o/Users/admin/Documents/XCode Projects/OpenCV/CS225/client.c:27: warning: incompatible implicit declaration of built-in function 'exit'
+o/Users/admin/Documents/XCode Projects/OpenCV/CS225/client.c:29: warning: implicit declaration of function 'bzero'
+o/Users/admin/Documents/XCode Projects/OpenCV/CS225/client.c:29: warning: incompatible implicit declaration of built-in function 'bzero'
+o/Users/admin/Documents/XCode Projects/OpenCV/CS225/client.c:31: warning: implicit declaration of function 'bcopy'
+o/Users/admin/Documents/XCode Projects/OpenCV/CS225/client.c:31: warning: incompatible implicit declaration of built-in function 'bcopy'
+o/Users/admin/Documents/XCode Projects/OpenCV/CS225/client.c:35: warning: passing argument 2 of 'connect' from incompatible pointer type
+o/Users/admin/Documents/XCode Projects/OpenCV/CS225/client.c:41: warning: implicit declaration of function 'write'
+o/Users/admin/Documents/XCode Projects/OpenCV/CS225/client.c:41: warning: implicit declaration of function 'strlen'
+o/Users/admin/Documents/XCode Projects/OpenCV/CS225/client.c:41: warning: incompatible implicit declaration of built-in function 'strlen'
+lSLF07#2@67"Compile /Users/admin/Documents/XCode Projects/OpenCV/CS225/client.c295745448#295745448#0(1558"/Users/admin/Documents/XCode Projects/OpenCV/CS225/client.c: In function 'error':/Users/admin/Documents/XCode Projects/OpenCV/CS225/client.c:11: warning: implicit declaration of function 'exit'/Users/admin/Documents/XCode Projects/OpenCV/CS225/client.c:11: warning: incompatible implicit declaration of built-in function 'exit'/Users/admin/Documents/XCode Projects/OpenCV/CS225/client.c: In function 'connect_client':/Users/admin/Documents/XCode Projects/OpenCV/CS225/client.c:27: warning: incompatible implicit declaration of built-in function 'exit'/Users/admin/Documents/XCode Projects/OpenCV/CS225/client.c:29: warning: implicit declaration of function 'bzero'/Users/admin/Documents/XCode Projects/OpenCV/CS225/client.c:29: warning: incompatible implicit declaration of built-in function 'bzero'/Users/admin/Documents/XCode Projects/OpenCV/CS225/client.c:31: warning: implicit declaration of function 'bcopy'/Users/admin/Documents/XCode Projects/OpenCV/CS225/client.c:31: warning: incompatible implicit declaration of built-in function 'bcopy'/Users/admin/Documents/XCode Projects/OpenCV/CS225/client.c:35: warning: passing argument 2 of 'connect' from incompatible pointer type/Users/admin/Documents/XCode Projects/OpenCV/CS225/client.c:41: warning: implicit declaration of function 'write'/Users/admin/Documents/XCode Projects/OpenCV/CS225/client.c:41: warning: implicit declaration of function 'strlen'/Users/admin/Documents/XCode Projects/OpenCV/CS225/client.c:41: warning: incompatible implicit declaration of built-in function 'strlen'11(22@39"Implicit declaration of function 'exit'295745448#82#113#0(6@59"/Users/admin/Documents/XCode Projects/OpenCV/CS225/client.c295745446#11#0#11#0#36"implicit declaration of function '*'0(22@61"Incompatible implicit declaration of built-in function 'exit'295745448#195#135#0(6@59"/Users/admin/Documents/XCode Projects/OpenCV/CS225/client.c295745446#11#0#11#0#0"0(22@61"Incompatible implicit declaration of built-in function 'exit'295745448#421#135#0(6@59"/Users/admin/Documents/XCode Projects/OpenCV/CS225/client.c295745446#27#0#27#0#0"0(22@40"Implicit declaration of function 'bzero'295745448#556#114#0(6@59"/Users/admin/Documents/XCode Projects/OpenCV/CS225/client.c295745446#29#0#29#0#36"implicit declaration of function '*'0(22@62"Incompatible implicit declaration of built-in function 'bzero'295745448#670#136#0(6@59"/Users/admin/Documents/XCode Projects/OpenCV/CS225/client.c295745446#29#0#29#0#0"0(22@40"Implicit declaration of function 'bcopy'295745448#806#114#0(6@59"/Users/admin/Documents/XCode Projects/OpenCV/CS225/client.c295745446#31#0#31#0#36"implicit declaration of function '*'0(22@62"Incompatible implicit declaration of built-in function 'bcopy'295745448#920#136#0(6@59"/Users/admin/Documents/XCode Projects/OpenCV/CS225/client.c295745446#31#0#31#0#0"0(22@62"Passing argument 2 of 'connect' from incompatible pointer type295745448#1056#136#0(6@59"/Users/admin/Documents/XCode Projects/OpenCV/CS225/client.c295745446#35#0#35#0#56"passing argument * of '*' from incompatible pointer type0(22@40"Implicit declaration of function 'write'295745448#1192#114#0(6@59"/Users/admin/Documents/XCode Projects/OpenCV/CS225/client.c295745446#41#0#41#0#36"implicit declaration of function '*'0(22@41"Implicit declaration of function 'strlen'295745448#1306#115#0(6@59"/Users/admin/Documents/XCode Projects/OpenCV/CS225/client.c295745446#41#0#41#0#36"implicit declaration of function '*'0(22@63"Incompatible implicit declaration of built-in function 'strlen'295745448#1421#137#0(6@59"/Users/admin/Documents/XCode Projects/OpenCV/CS225/client.c295745446#41#0#41#0#0"0(0#0#59"/Users/admin/Documents/XCode Projects/OpenCV/CS225/client.c4300882208#1519"    cd "/Users/admin/Documents/XCode Projects/OpenCV/CS225"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D_GLIBCXX_DEBUG=1 -D_GLIBCXX_DEBUG_PEDANTIC=1 -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-generated-files.hmap" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-own-target-headers.hmap" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-all-target-headers.hmap" -iquote "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-project-headers.hmap" "-F/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug" "-F/Users/admin/Documents/XCode Projects/OpenCV/CS225/../../../../Library/Frameworks" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug/include" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/DerivedSources/i386" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/DerivedSources" -c "/Users/admin/Documents/XCode Projects/OpenCV/CS225/client.c" -o "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/Objects-normal/i386/client.o"0#
+
 CCompileC build/CS225.build/Debug/CS225.build/Objects-normal/i386/main.o "/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
-s295712398.674837
-e295712399.819460
+s295745448.310073
+e295745449.354163
 r1
 xCompileC
 xbuild/CS225.build/Debug/CS225.build/Objects-normal/i386/main.o
@@ -295,13 +365,13 @@ xi386
 xc++
 xcom.apple.compilers.gcc.4_2
 o/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp: In function 'int main(int, char* const*)':
-o/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp:12: warning: deprecated conversion from string constant to 'char*'
-o/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp:13: warning: deprecated conversion from string constant to 'char*'
-lSLF07#2@67"Compile /Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp295712398#295712399#0(358"/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp: In function 'int main(int, char* const*)':/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp:12: warning: deprecated conversion from string constant to 'char*'/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp:13: warning: deprecated conversion from string constant to 'char*'2(22@53"Deprecated conversion from string constant to 'char*'295712399#104#127#0(6@59"/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp295712164#12#0#12#0#49"deprecated conversion from string constant to '*'0(22@53"Deprecated conversion from string constant to 'char*'295712399#231#127#0(6@59"/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp295712164#13#0#13#0#49"deprecated conversion from string constant to '*'0(0#0#59"/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp4300882208#1536"    cd "/Users/admin/Documents/XCode Projects/OpenCV/CS225"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D_GLIBCXX_DEBUG=1 -D_GLIBCXX_DEBUG_PEDANTIC=1 -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-generated-files.hmap" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-own-target-headers.hmap" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-all-target-headers.hmap" -iquote "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-project-headers.hmap" "-F/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug" "-F/Users/admin/Documents/XCode Projects/OpenCV/CS225/../../../../Library/Frameworks" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug/include" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/DerivedSources/i386" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/DerivedSources" -c "/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp" -o "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/Objects-normal/i386/main.o"0#
+o/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp:31: warning: deprecated conversion from string constant to 'char*'
+o/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp:32: warning: deprecated conversion from string constant to 'char*'
+lSLF07#2@67"Compile /Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp295745448#295745449#0(358"/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp: In function 'int main(int, char* const*)':/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp:31: warning: deprecated conversion from string constant to 'char*'/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp:32: warning: deprecated conversion from string constant to 'char*'2(22@53"Deprecated conversion from string constant to 'char*'295745449#104#127#0(6@59"/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp295745415#31#0#31#0#49"deprecated conversion from string constant to '*'0(22@53"Deprecated conversion from string constant to 'char*'295745449#231#127#0(6@59"/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp295745415#32#0#32#0#49"deprecated conversion from string constant to '*'0(0#0#59"/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp4300882208#1536"    cd "/Users/admin/Documents/XCode Projects/OpenCV/CS225"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D_GLIBCXX_DEBUG=1 -D_GLIBCXX_DEBUG_PEDANTIC=1 -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-generated-files.hmap" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-own-target-headers.hmap" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-all-target-headers.hmap" -iquote "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-project-headers.hmap" "-F/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug" "-F/Users/admin/Documents/XCode Projects/OpenCV/CS225/../../../../Library/Frameworks" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug/include" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/DerivedSources/i386" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/DerivedSources" -c "/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp" -o "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/Objects-normal/i386/main.o"0#
 
 CCompileC build/CS225.build/Debug/CS225.build/Objects-normal/i386/tracker.o "/Users/admin/Documents/XCode Projects/OpenCV/CS225/tracker.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
-s295712522.019578
-e295712523.064597
+s295745327.615205
+e295745328.968446
 r1
 xCompileC
 xbuild/CS225.build/Debug/CS225.build/Objects-normal/i386/tracker.o
@@ -310,11 +380,11 @@ xnormal
 xi386
 xc++
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@70"Compile /Users/admin/Documents/XCode Projects/OpenCV/CS225/tracker.cpp295712522#295712523#0(0"0(0#0#62"/Users/admin/Documents/XCode Projects/OpenCV/CS225/tracker.cpp4300882208#1542"    cd "/Users/admin/Documents/XCode Projects/OpenCV/CS225"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D_GLIBCXX_DEBUG=1 -D_GLIBCXX_DEBUG_PEDANTIC=1 -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-generated-files.hmap" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-own-target-headers.hmap" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-all-target-headers.hmap" -iquote "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-project-headers.hmap" "-F/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug" "-F/Users/admin/Documents/XCode Projects/OpenCV/CS225/../../../../Library/Frameworks" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug/include" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/DerivedSources/i386" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/DerivedSources" -c "/Users/admin/Documents/XCode Projects/OpenCV/CS225/tracker.cpp" -o "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/Objects-normal/i386/tracker.o"0#
+lSLF07#2@70"Compile /Users/admin/Documents/XCode Projects/OpenCV/CS225/tracker.cpp295745327#295745328#0(0"0(0#0#62"/Users/admin/Documents/XCode Projects/OpenCV/CS225/tracker.cpp4300882208#1542"    cd "/Users/admin/Documents/XCode Projects/OpenCV/CS225"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D_GLIBCXX_DEBUG=1 -D_GLIBCXX_DEBUG_PEDANTIC=1 -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-generated-files.hmap" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-own-target-headers.hmap" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-all-target-headers.hmap" -iquote "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-project-headers.hmap" "-F/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug" "-F/Users/admin/Documents/XCode Projects/OpenCV/CS225/../../../../Library/Frameworks" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug/include" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/DerivedSources/i386" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/DerivedSources" -c "/Users/admin/Documents/XCode Projects/OpenCV/CS225/tracker.cpp" -o "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/Objects-normal/i386/tracker.o"0#
 
 CCompileC build/CS225.build/Debug/CS225.build/Objects-normal/x86_64/main.o "/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp" normal x86_64 c++ com.apple.compilers.gcc.4_2
-s295217530.941684
-e295217532.028404
+s295737654.607596
+e295737656.010281
 r1
 xCompileC
 xbuild/CS225.build/Debug/CS225.build/Objects-normal/x86_64/main.o
@@ -323,21 +393,37 @@ xnormal
 xx86_64
 xc++
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@67"Compile /Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp295217530#295217532#0(0"0(0#0#59"/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp4300882208#1542"    cd "/Users/admin/Documents/XCode Projects/OpenCV/CS225"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D_GLIBCXX_DEBUG=1 -D_GLIBCXX_DEBUG_PEDANTIC=1 -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-generated-files.hmap" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-own-target-headers.hmap" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-all-target-headers.hmap" -iquote "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-project-headers.hmap" "-F/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug" "-F/Users/admin/Documents/XCode Projects/OpenCV/CS225/../../../../Library/Frameworks" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug/include" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/DerivedSources/x86_64" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/DerivedSources" -c "/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp" -o "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/Objects-normal/x86_64/main.o"0#
+o/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp: In function 'int main(int, char* const*)':
+o/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp:25: warning: deprecated conversion from string constant to 'char*'
+o/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp:26: warning: deprecated conversion from string constant to 'char*'
+lSLF07#2@67"Compile /Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp295737654#295737656#0(358"/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp: In function 'int main(int, char* const*)':/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp:25: warning: deprecated conversion from string constant to 'char*'/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp:26: warning: deprecated conversion from string constant to 'char*'2(22@53"Deprecated conversion from string constant to 'char*'295737655#104#127#0(6@59"/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp295736970#25#0#25#0#49"deprecated conversion from string constant to '*'0(22@53"Deprecated conversion from string constant to 'char*'295737655#231#127#0(6@59"/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp295736970#26#0#26#0#49"deprecated conversion from string constant to '*'0(0#0#59"/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp4300882208#1542"    cd "/Users/admin/Documents/XCode Projects/OpenCV/CS225"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D_GLIBCXX_DEBUG=1 -D_GLIBCXX_DEBUG_PEDANTIC=1 -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-generated-files.hmap" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-own-target-headers.hmap" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-all-target-headers.hmap" -iquote "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-project-headers.hmap" "-F/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug" "-F/Users/admin/Documents/XCode Projects/OpenCV/CS225/../../../../Library/Frameworks" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug/include" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/DerivedSources/x86_64" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/DerivedSources" -c "/Users/admin/Documents/XCode Projects/OpenCV/CS225/main.cpp" -o "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/Objects-normal/x86_64/main.o"0#
+
+CCompileC build/CS225.build/Debug/CS225.build/Objects-normal/x86_64/tracker.o "/Users/admin/Documents/XCode Projects/OpenCV/CS225/tracker.cpp" normal x86_64 c++ com.apple.compilers.gcc.4_2
+s295737654.609315
+e295737656.009881
+r1
+xCompileC
+xbuild/CS225.build/Debug/CS225.build/Objects-normal/x86_64/tracker.o
+x/Users/admin/Documents/XCode Projects/OpenCV/CS225/tracker.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@70"Compile /Users/admin/Documents/XCode Projects/OpenCV/CS225/tracker.cpp295737654#295737656#0(0"0(0#0#62"/Users/admin/Documents/XCode Projects/OpenCV/CS225/tracker.cpp4300882208#1548"    cd "/Users/admin/Documents/XCode Projects/OpenCV/CS225"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D_GLIBCXX_DEBUG=1 -D_GLIBCXX_DEBUG_PEDANTIC=1 -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-generated-files.hmap" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-own-target-headers.hmap" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-all-target-headers.hmap" -iquote "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/CS225-project-headers.hmap" "-F/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug" "-F/Users/admin/Documents/XCode Projects/OpenCV/CS225/../../../../Library/Frameworks" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug/include" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/DerivedSources/x86_64" "-I/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/DerivedSources" -c "/Users/admin/Documents/XCode Projects/OpenCV/CS225/tracker.cpp" -o "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/Objects-normal/x86_64/tracker.o"0#
 
 CLd "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug/CS225" normal i386
-s295712523.064699
-e295712523.093107
+s295745449.354263
+e295745449.382681
 r1
 xLd
 x/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug/CS225
 xnormal
 xi386
-lSLF07#2@73"Link /Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug/CS225295712523#295712523#0(0"0(0#0#0"4300882208#660"    cd "/Users/admin/Documents/XCode Projects/OpenCV/CS225"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/g++-4.2 -arch i386 -isysroot /Developer/SDKs/MacOSX10.6.sdk "-L/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug" "-F/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug" "-F/Users/admin/Documents/XCode Projects/OpenCV/CS225/../../../../Library/Frameworks" -filelist "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/Objects-normal/i386/CS225.LinkFileList" -mmacosx-version-min=10.6 -framework OpenCV -o "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug/CS225"0#
+lSLF07#2@73"Link /Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug/CS225295745449#295745449#0(0"0(0#0#0"4300882208#660"    cd "/Users/admin/Documents/XCode Projects/OpenCV/CS225"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/g++-4.2 -arch i386 -isysroot /Developer/SDKs/MacOSX10.6.sdk "-L/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug" "-F/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug" "-F/Users/admin/Documents/XCode Projects/OpenCV/CS225/../../../../Library/Frameworks" -filelist "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/Objects-normal/i386/CS225.LinkFileList" -mmacosx-version-min=10.6 -framework OpenCV -o "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug/CS225"0#
 
 CLd "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug/CS225" normal x86_64
-s295217532.028501
-e295217532.054956
+s295737656.010386
+e295737656.179162
 r0
 xLd
 x/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug/CS225
@@ -345,10 +431,92 @@ xnormal
 xx86_64
 old: warning: in /Users/admin/Library/Frameworks/OpenCV.framework/OpenCV, missing required architecture x86_64 in file
 oUndefined symbols:
+o  "_cvAnd", referenced from:
+o      Tracker::processMostRecentFrame()      in tracker.o
+o  "_cvSetMouseCallback", referenced from:
+o      Tracker::Tracker(char*, int, void (*)(int, int, int, int, void*), float, float)in tracker.o
+o      Tracker::Tracker(char*, int, void (*)(int, int, int, int, void*), float, float)in tracker.o
+o  "_cvGetReal1D", referenced from:
+o      Tracker::processMostRecentFrame()      in tracker.o
+o  "_cvSetZero", referenced from:
+o      Tracker::initializeImageVariables(_IplImage*)      in tracker.o
+o      Tracker::processMostRecentFrame()      in tracker.o
 o  "_cvCreateCameraCapture", referenced from:
-o      processArgs(int, char* const*)in main.o
-o      processArgs(int, char* const*)in main.o
+o      Tracker::Tracker(char*, int, void (*)(int, int, int, int, void*), float, float)in tracker.o
+o      Tracker::Tracker(char*, int, void (*)(int, int, int, int, void*), float, float)in tracker.o
+o  "_cvRectangle", referenced from:
+o      Tracker::processMostRecentFrame()      in tracker.o
+o  "_cvCvtColor", referenced from:
+o      Tracker::processMostRecentFrame()      in tracker.o
+o      Tracker::nextFrame()     in tracker.o
+o  "_cvInRangeS", referenced from:
+o      Tracker::processMostRecentFrame()      in tracker.o
+o  "_cvNamedWindow", referenced from:
+o      Tracker::Tracker(char*, int, void (*)(int, int, int, int, void*), float, float)in tracker.o
+o      Tracker::Tracker(char*, int, void (*)(int, int, int, int, void*), float, float)in tracker.o
+o  "_cvGetMinMaxHistValue", referenced from:
+o      Tracker::processMostRecentFrame()      in tracker.o
+o  "_cvSplit", referenced from:
+o      Tracker::processMostRecentFrame()      in tracker.o
+o  "_cvCopy", referenced from:
+o      Tracker::nextFrame()     in tracker.o
+o  "_cvCreateTrackbar", referenced from:
+o      Tracker::Tracker(char*, int, void (*)(int, int, int, int, void*), float, float)in tracker.o
+o      Tracker::Tracker(char*, int, void (*)(int, int, int, int, void*), float, float)in tracker.o
+o      Tracker::Tracker(char*, int, void (*)(int, int, int, int, void*), float, float)in tracker.o
+o      Tracker::Tracker(char*, int, void (*)(int, int, int, int, void*), float, float)in tracker.o
+o      Tracker::Tracker(char*, int, void (*)(int, int, int, int, void*), float, float)in tracker.o
+o      Tracker::Tracker(char*, int, void (*)(int, int, int, int, void*), float, float)in tracker.o
+o  "_cvCreateImage", referenced from:
+o      Tracker::initializeImageVariables(_IplImage*)      in tracker.o
+o      Tracker::initializeImageVariables(_IplImage*)      in tracker.o
+o      Tracker::initializeImageVariables(_IplImage*)      in tracker.o
+o      Tracker::initializeImageVariables(_IplImage*)      in tracker.o
+o      Tracker::initializeImageVariables(_IplImage*)      in tracker.o
+o      Tracker::initializeImageVariables(_IplImage*)      in tracker.o
+o  "_cvShowImage", referenced from:
+o      Tracker::displayImage()      in tracker.o
+o  "_cvSetImageROI", referenced from:
+o      Tracker::handleSelectionEvents()      in tracker.o
+o      Tracker::processMostRecentFrame()      in tracker.o
+o      Tracker::processMostRecentFrame()      in tracker.o
+o  "_cvCreateHist", referenced from:
+o      Tracker::initializeImageVariables(_IplImage*)      in tracker.o
+o  "_cvConvertScale", referenced from:
+o      Tracker::processMostRecentFrame()      in tracker.o
+o  "_cvCamShift", referenced from:
+o      Tracker::processMostRecentFrame()      in tracker.o
+o  "_cvResetImageROI", referenced from:
+o      Tracker::handleSelectionEvents()      in tracker.o
+o      Tracker::processMostRecentFrame()      in tracker.o
+o      Tracker::processMostRecentFrame()      in tracker.o
+o  "_cvQueryFrame", referenced from:
+o      Tracker::nextFrame()     in tracker.o
+o  "_cvCalcArrHist", referenced from:
+o      _cvCalcHist in tracker.o
+o  "_cvDestroyWindow", referenced from:
+o      Tracker::cleanUp()     in tracker.o
+o  "_cvReleaseCapture", referenced from:
+o      Tracker::cleanUp()     in tracker.o
+o  "_cvCalcArrBackProject", referenced from:
+o      Tracker::processMostRecentFrame()      in tracker.o
+o  "_cvWaitKey", referenced from:
+o      _main in main.o
+o  "_cvGetSize", referenced from:
+o      Tracker::printProperties()      in tracker.o
+o      Tracker::printProperties()      in tracker.o
+o      Tracker::initializeImageVariables(_IplImage*)      in tracker.o
+o      Tracker::initializeImageVariables(_IplImage*)      in tracker.o
+o      Tracker::initializeImageVariables(_IplImage*)      in tracker.o
+o      Tracker::initializeImageVariables(_IplImage*)      in tracker.o
+o      Tracker::initializeImageVariables(_IplImage*)      in tracker.o
+o      Tracker::initializeImageVariables(_IplImage*)      in tracker.o
+o      Tracker::initializeImageVariables(_IplImage*)      in tracker.o
+o  "_cvXorS", referenced from:
+o      Tracker::handleSelectionEvents()      in tracker.o
+o  "_cvCircle", referenced from:
+o      Tracker::processMostRecentFrame()      in tracker.o
 old: symbol(s) not found
 ocollect2: ld returned 1 exit status
-lSLF07#2@73"Link /Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug/CS225295217532#295217532#0(334"ld: warning: in /Users/admin/Library/Frameworks/OpenCV.framework/OpenCV, missing required architecture x86_64 in fileUndefined symbols:  "_cvCreateCameraCapture", referenced from:      processArgs(int, char* const*)in main.o      processArgs(int, char* const*)in main.old: symbol(s) not foundcollect2: ld returned 1 exit status6(22@104"In /Users/admin/Library/Frameworks/OpenCV.framework/OpenCV, missing required architecture x86_64 in file295217532#0#118#0(6@0"295217532#0#0#0#0#0"0(4@42""_cvCreateCameraCapture", referenced from:295217532#137#45#0(6@0"295217532#0#0#0#0#0"0(13@39"ProcessArgs(int, char* const*)in main.o295217532#182#46#0(6@0"295217532#0#0#0#0#0"0(13@39"ProcessArgs(int, char* const*)in main.o295217532#228#46#0(6@0"295217532#0#0#0#0#0"0(13@19"Symbol(s) not found295217532#274#24#0(6@0"295217532#0#0#0#0#0"0(13@35"Collect2: ld returned 1 exit status295217532#298#36#0(6@0"295217532#0#0#0#0#0"0(0#0#0"4300882208#664"    cd "/Users/admin/Documents/XCode Projects/OpenCV/CS225"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/g++-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk "-L/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug" "-F/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug" "-F/Users/admin/Documents/XCode Projects/OpenCV/CS225/../../../../Library/Frameworks" -filelist "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/Objects-normal/x86_64/CS225.LinkFileList" -mmacosx-version-min=10.6 -framework OpenCV -o "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug/CS225"1#
+lSLF07#2@73"Link /Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug/CS225295737656#295737656#0(4990"ld: warning: in /Users/admin/Library/Frameworks/OpenCV.framework/OpenCV, missing required architecture x86_64 in fileUndefined symbols:  "_cvAnd", referenced from:      Tracker::processMostRecentFrame()      in tracker.o  "_cvSetMouseCallback", referenced from:      Tracker::Tracker(char*, int, void (*)(int, int, int, int, void*), float, float)in tracker.o      Tracker::Tracker(char*, int, void (*)(int, int, int, int, void*), float, float)in tracker.o  "_cvGetReal1D", referenced from:      Tracker::processMostRecentFrame()      in tracker.o  "_cvSetZero", referenced from:      Tracker::initializeImageVariables(_IplImage*)      in tracker.o      Tracker::processMostRecentFrame()      in tracker.o  "_cvCreateCameraCapture", referenced from:      Tracker::Tracker(char*, int, void (*)(int, int, int, int, void*), float, float)in tracker.o      Tracker::Tracker(char*, int, void (*)(int, int, int, int, void*), float, float)in tracker.o  "_cvRectangle", referenced from:      Tracker::processMostRecentFrame()      in tracker.o  "_cvCvtColor", referenced from:      Tracker::processMostRecentFrame()      in tracker.o      Tracker::nextFrame()     in tracker.o  "_cvInRangeS", referenced from:      Tracker::processMostRecentFrame()      in tracker.o  "_cvNamedWindow", referenced from:      Tracker::Tracker(char*, int, void (*)(int, int, int, int, void*), float, float)in tracker.o      Tracker::Tracker(char*, int, void (*)(int, int, int, int, void*), float, float)in tracker.o  "_cvGetMinMaxHistValue", referenced from:      Tracker::processMostRecentFrame()      in tracker.o  "_cvSplit", referenced from:      Tracker::processMostRecentFrame()      in tracker.o  "_cvCopy", referenced from:      Tracker::nextFrame()     in tracker.o  "_cvCreateTrackbar", referenced from:      Tracker::Tracker(char*, int, void (*)(int, int, int, int, void*), float, float)in tracker.o      Tracker::Tracker(char*, int, void (*)(int, int, int, int, void*), float, float)in tracker.o      Tracker::Tracker(char*, int, void (*)(int, int, int, int, void*), float, float)in tracker.o      Tracker::Tracker(char*, int, void (*)(int, int, int, int, void*), float, float)in tracker.o      Tracker::Tracker(char*, int, void (*)(int, int, int, int, void*), float, float)in tracker.o      Tracker::Tracker(char*, int, void (*)(int, int, int, int, void*), float, float)in tracker.o  "_cvCreateImage", referenced from:      Tracker::initializeImageVariables(_IplImage*)      in tracker.o      Tracker::initializeImageVariables(_IplImage*)      in tracker.o      Tracker::initializeImageVariables(_IplImage*)      in tracker.o      Tracker::initializeImageVariables(_IplImage*)      in tracker.o      Tracker::initializeImageVariables(_IplImage*)      in tracker.o      Tracker::initializeImageVariables(_IplImage*)      in tracker.o  "_cvShowImage", referenced from:      Tracker::displayImage()      in tracker.o  "_cvSetImageROI", referenced from:      Tracker::handleSelectionEvents()      in tracker.o      Tracker::processMostRecentFrame()      in tracker.o      Tracker::processMostRecentFrame()      in tracker.o  "_cvCreateHist", referenced from:      Tracker::initializeImageVariables(_IplImage*)      in tracker.o  "_cvConvertScale", referenced from:      Tracker::processMostRecentFrame()      in tracker.o  "_cvCamShift", referenced from:      Tracker::processMostRecentFrame()      in tracker.o  "_cvResetImageROI", referenced from:      Tracker::handleSelectionEvents()      in tracker.o      Tracker::processMostRecentFrame()      in tracker.o      Tracker::processMostRecentFrame()      in tracker.o  "_cvQueryFrame", referenced from:      Tracker::nextFrame()     in tracker.o  "_cvCalcArrHist", referenced from:      _cvCalcHist in tracker.o  "_cvDestroyWindow", referenced from:      Tracker::cleanUp()     in tracker.o  "_cvReleaseCapture", referenced from:      Tracker::cleanUp()     in tracker.o  "_cvCalcArrBackProject", referenced from:      Tracker::processMostRecentFrame()      in tracker.o  "_cvWaitKey", referenced from:      _main in main.o  "_cvGetSize", referenced from:      Tracker::printProperties()      in tracker.o      Tracker::printProperties()      in tracker.o      Tracker::initializeImageVariables(_IplImage*)      in tracker.o      Tracker::initializeImageVariables(_IplImage*)      in tracker.o      Tracker::initializeImageVariables(_IplImage*)      in tracker.o      Tracker::initializeImageVariables(_IplImage*)      in tracker.o      Tracker::initializeImageVariables(_IplImage*)      in tracker.o      Tracker::initializeImageVariables(_IplImage*)      in tracker.o      Tracker::initializeImageVariables(_IplImage*)      in tracker.o  "_cvXorS", referenced from:      Tracker::handleSelectionEvents()      in tracker.o  "_cvCircle", referenced from:      Tracker::processMostRecentFrame()      in tracker.old: symbol(s) not foundcollect2: ld returned 1 exit status88(22@104"In /Users/admin/Library/Frameworks/OpenCV.framework/OpenCV, missing required architecture x86_64 in file295737656#0#118#0(6@0"295737656#0#0#0#0#0"0(4@26""_cvAnd", referenced from:295737656#137#29#0(6@0"295737656#0#0#0#0#0"0(13@51"Tracker::processMostRecentFrame()      in tracker.o295737656#166#58#0(6@0"295737656#0#0#0#0#0"0(4@39""_cvSetMouseCallback", referenced from:295737656#224#42#0(6@0"295737656#0#0#0#0#0"0(13@91"Tracker::Tracker(char*, int, void (*)(int, int, int, int, void*), float, float)in tracker.o295737656#266#98#0(6@0"295737656#0#0#0#0#0"0(13@91"Tracker::Tracker(char*, int, void (*)(int, int, int, int, void*), float, float)in tracker.o295737656#364#98#0(6@0"295737656#0#0#0#0#0"0(4@32""_cvGetReal1D", referenced from:295737656#462#35#0(6@0"295737656#0#0#0#0#0"0(13@51"Tracker::processMostRecentFrame()      in tracker.o295737656#497#58#0(6@0"295737656#0#0#0#0#0"0(4@30""_cvSetZero", referenced from:295737656#555#33#0(6@0"295737656#0#0#0#0#0"0(13@63"Tracker::initializeImageVariables(_IplImage*)      in tracker.o295737656#588#70#0(6@0"295737656#0#0#0#0#0"0(13@51"Tracker::processMostRecentFrame()      in tracker.o295737656#658#58#0(6@0"295737656#0#0#0#0#0"0(4@42""_cvCreateCameraCapture", referenced from:295737656#716#45#0(6@0"295737656#0#0#0#0#0"0(13@91"Tracker::Tracker(char*, int, void (*)(int, int, int, int, void*), float, float)in tracker.o295737656#761#98#0(6@0"295737656#0#0#0#0#0"0(13@91"Tracker::Tracker(char*, int, void (*)(int, int, int, int, void*), float, float)in tracker.o295737656#859#98#0(6@0"295737656#0#0#0#0#0"0(4@32""_cvRectangle", referenced from:295737656#957#35#0(6@0"295737656#0#0#0#0#0"0(13@51"Tracker::processMostRecentFrame()      in tracker.o295737656#992#58#0(6@0"295737656#0#0#0#0#0"0(4@31""_cvCvtColor", referenced from:295737656#1050#34#0(6@0"295737656#0#0#0#0#0"0(13@51"Tracker::processMostRecentFrame()      in tracker.o295737656#1084#58#0(6@0"295737656#0#0#0#0#0"0(13@37"Tracker::nextFrame()     in tracker.o295737656#1142#44#0(6@0"295737656#0#0#0#0#0"0(4@31""_cvInRangeS", referenced from:295737656#1186#34#0(6@0"295737656#0#0#0#0#0"0(13@51"Tracker::processMostRecentFrame()      in tracker.o295737656#1220#58#0(6@0"295737656#0#0#0#0#0"0(4@34""_cvNamedWindow", referenced from:295737656#1278#37#0(6@0"295737656#0#0#0#0#0"0(13@91"Tracker::Tracker(char*, int, void (*)(int, int, int, int, void*), float, float)in tracker.o295737656#1315#98#0(6@0"295737656#0#0#0#0#0"0(13@91"Tracker::Tracker(char*, int, void (*)(int, int, int, int, void*), float, float)in tracker.o295737656#1413#98#0(6@0"295737656#0#0#0#0#0"0(4@41""_cvGetMinMaxHistValue", referenced from:295737656#1511#44#0(6@0"295737656#0#0#0#0#0"0(13@51"Tracker::processMostRecentFrame()      in tracker.o295737656#1555#58#0(6@0"295737656#0#0#0#0#0"0(4@28""_cvSplit", referenced from:295737656#1613#31#0(6@0"295737656#0#0#0#0#0"0(13@51"Tracker::processMostRecentFrame()      in tracker.o295737656#1644#58#0(6@0"295737656#0#0#0#0#0"0(4@27""_cvCopy", referenced from:295737656#1702#30#0(6@0"295737656#0#0#0#0#0"0(13@37"Tracker::nextFrame()     in tracker.o295737656#1732#44#0(6@0"295737656#0#0#0#0#0"0(4@37""_cvCreateTrackbar", referenced from:295737656#1776#40#0(6@0"295737656#0#0#0#0#0"0(13@91"Tracker::Tracker(char*, int, void (*)(int, int, int, int, void*), float, float)in tracker.o295737656#1816#98#0(6@0"295737656#0#0#0#0#0"0(13@91"Tracker::Tracker(char*, int, void (*)(int, int, int, int, void*), float, float)in tracker.o295737656#1914#98#0(6@0"295737656#0#0#0#0#0"0(13@91"Tracker::Tracker(char*, int, void (*)(int, int, int, int, void*), float, float)in tracker.o295737656#2012#98#0(6@0"295737656#0#0#0#0#0"0(13@91"Tracker::Tracker(char*, int, void (*)(int, int, int, int, void*), float, float)in tracker.o295737656#2110#98#0(6@0"295737656#0#0#0#0#0"0(13@91"Tracker::Tracker(char*, int, void (*)(int, int, int, int, void*), float, float)in tracker.o295737656#2208#98#0(6@0"295737656#0#0#0#0#0"0(13@91"Tracker::Tracker(char*, int, void (*)(int, int, int, int, void*), float, float)in tracker.o295737656#2306#98#0(6@0"295737656#0#0#0#0#0"0(4@34""_cvCreateImage", referenced from:295737656#2404#37#0(6@0"295737656#0#0#0#0#0"0(13@63"Tracker::initializeImageVariables(_IplImage*)      in tracker.o295737656#2441#70#0(6@0"295737656#0#0#0#0#0"0(13@63"Tracker::initializeImageVariables(_IplImage*)      in tracker.o295737656#2511#70#0(6@0"295737656#0#0#0#0#0"0(13@63"Tracker::initializeImageVariables(_IplImage*)      in tracker.o295737656#2581#70#0(6@0"295737656#0#0#0#0#0"0(13@63"Tracker::initializeImageVariables(_IplImage*)      in tracker.o295737656#2651#70#0(6@0"295737656#0#0#0#0#0"0(13@63"Tracker::initializeImageVariables(_IplImage*)      in tracker.o295737656#2721#70#0(6@0"295737656#0#0#0#0#0"0(13@63"Tracker::initializeImageVariables(_IplImage*)      in tracker.o295737656#2791#70#0(6@0"295737656#0#0#0#0#0"0(4@32""_cvShowImage", referenced from:295737656#2861#35#0(6@0"295737656#0#0#0#0#0"0(13@41"Tracker::displayImage()      in tracker.o295737656#2896#48#0(6@0"295737656#0#0#0#0#0"0(4@34""_cvSetImageROI", referenced from:295737656#2944#37#0(6@0"295737656#0#0#0#0#0"0(13@50"Tracker::handleSelectionEvents()      in tracker.o295737656#2981#57#0(6@0"295737656#0#0#0#0#0"0(13@51"Tracker::processMostRecentFrame()      in tracker.o295737656#3038#58#0(6@0"295737656#0#0#0#0#0"0(13@51"Tracker::processMostRecentFrame()      in tracker.o295737656#3096#58#0(6@0"295737656#0#0#0#0#0"0(4@33""_cvCreateHist", referenced from:295737656#3154#36#0(6@0"295737656#0#0#0#0#0"0(13@63"Tracker::initializeImageVariables(_IplImage*)      in tracker.o295737656#3190#70#0(6@0"295737656#0#0#0#0#0"0(4@35""_cvConvertScale", referenced from:295737656#3260#38#0(6@0"295737656#0#0#0#0#0"0(13@51"Tracker::processMostRecentFrame()      in tracker.o295737656#3298#58#0(6@0"295737656#0#0#0#0#0"0(4@31""_cvCamShift", referenced from:295737656#3356#34#0(6@0"295737656#0#0#0#0#0"0(13@51"Tracker::processMostRecentFrame()      in tracker.o295737656#3390#58#0(6@0"295737656#0#0#0#0#0"0(4@36""_cvResetImageROI", referenced from:295737656#3448#39#0(6@0"295737656#0#0#0#0#0"0(13@50"Tracker::handleSelectionEvents()      in tracker.o295737656#3487#57#0(6@0"295737656#0#0#0#0#0"0(13@51"Tracker::processMostRecentFrame()      in tracker.o295737656#3544#58#0(6@0"295737656#0#0#0#0#0"0(13@51"Tracker::processMostRecentFrame()      in tracker.o295737656#3602#58#0(6@0"295737656#0#0#0#0#0"0(4@33""_cvQueryFrame", referenced from:295737656#3660#36#0(6@0"295737656#0#0#0#0#0"0(13@37"Tracker::nextFrame()     in tracker.o295737656#3696#44#0(6@0"295737656#0#0#0#0#0"0(4@34""_cvCalcArrHist", referenced from:295737656#3740#37#0(6@0"295737656#0#0#0#0#0"0(13@24"_cvCalcHist in tracker.o295737656#3777#31#0(6@0"295737656#0#0#0#0#0"0(4@36""_cvDestroyWindow", referenced from:295737656#3808#39#0(6@0"295737656#0#0#0#0#0"0(13@35"Tracker::cleanUp()     in tracker.o295737656#3847#42#0(6@0"295737656#0#0#0#0#0"0(4@37""_cvReleaseCapture", referenced from:295737656#3889#40#0(6@0"295737656#0#0#0#0#0"0(13@35"Tracker::cleanUp()     in tracker.o295737656#3929#42#0(6@0"295737656#0#0#0#0#0"0(4@41""_cvCalcArrBackProject", referenced from:295737656#3971#44#0(6@0"295737656#0#0#0#0#0"0(13@51"Tracker::processMostRecentFrame()      in tracker.o295737656#4015#58#0(6@0"295737656#0#0#0#0#0"0(4@30""_cvWaitKey", referenced from:295737656#4073#33#0(6@0"295737656#0#0#0#0#0"0(13@15"_main in main.o295737656#4106#22#0(6@0"295737656#0#0#0#0#0"0(4@30""_cvGetSize", referenced from:295737656#4128#33#0(6@0"295737656#0#0#0#0#0"0(13@44"Tracker::printProperties()      in tracker.o295737656#4161#51#0(6@0"295737656#0#0#0#0#0"0(13@44"Tracker::printProperties()      in tracker.o295737656#4212#51#0(6@0"295737656#0#0#0#0#0"0(13@63"Tracker::initializeImageVariables(_IplImage*)      in tracker.o295737656#4263#70#0(6@0"295737656#0#0#0#0#0"0(13@63"Tracker::initializeImageVariables(_IplImage*)      in tracker.o295737656#4333#70#0(6@0"295737656#0#0#0#0#0"0(13@63"Tracker::initializeImageVariables(_IplImage*)      in tracker.o295737656#4403#70#0(6@0"295737656#0#0#0#0#0"0(13@63"Tracker::initializeImageVariables(_IplImage*)      in tracker.o295737656#4473#70#0(6@0"295737656#0#0#0#0#0"0(13@63"Tracker::initializeImageVariables(_IplImage*)      in tracker.o295737656#4543#70#0(6@0"295737656#0#0#0#0#0"0(13@63"Tracker::initializeImageVariables(_IplImage*)      in tracker.o295737656#4613#70#0(6@0"295737656#0#0#0#0#0"0(13@63"Tracker::initializeImageVariables(_IplImage*)      in tracker.o295737656#4683#70#0(6@0"295737656#0#0#0#0#0"0(4@27""_cvXorS", referenced from:295737656#4753#30#0(6@0"295737656#0#0#0#0#0"0(13@50"Tracker::handleSelectionEvents()      in tracker.o295737656#4783#57#0(6@0"295737656#0#0#0#0#0"0(4@29""_cvCircle", referenced from:295737656#4840#32#0(6@0"295737656#0#0#0#0#0"0(13@51"Tracker::processMostRecentFrame()      in tracker.o295737656#4872#58#0(6@0"295737656#0#0#0#0#0"0(13@19"Symbol(s) not found295737656#4930#24#0(6@0"295737656#0#0#0#0#0"0(13@35"Collect2: ld returned 1 exit status295737656#4954#36#0(6@0"295737656#0#0#0#0#0"0(0#0#0"4300882208#726"    cd "/Users/admin/Documents/XCode Projects/OpenCV/CS225"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/g++-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk "-L/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug" "-F/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug" "-F/Users/admin/Documents/XCode Projects/OpenCV/CS225/../../../../Library/Frameworks" -filelist "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/Objects-normal/x86_64/CS225.LinkFileList" -mmacosx-version-min=10.6 -framework OpenCV "/Users/admin/Documents/XCode Projects/OpenCV/CS225/client.o" -o "/Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug/CS225"1#
 

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		841E47AA119F6ABD005F4038 /* tracker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 841E47A9119F6ABD005F4038 /* tracker.cpp */; };
 		841F4CD01198A56300F742D2 /* OpenCV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841F4CCF1198A56300F742D2 /* OpenCV.framework */; };
+		84B889FC11A09983000505B5 /* client.c in Sources */ = {isa = PBXBuildFile; fileRef = 84B889FB11A09983000505B5 /* client.c */; };
 		8DD76F650486A84900D96B5E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* main.cpp */; settings = {ATTRIBUTES = (); }; };
 		8DD76F6A0486A84900D96B5E /* CS225.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6859E8B029090EE04C91782 /* CS225.1 */; };
 /* End PBXBuildFile section */
@@ -31,6 +32,7 @@
 		841E47A8119F6ABD005F4038 /* tracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tracker.h; sourceTree = "<group>"; };
 		841E47A9119F6ABD005F4038 /* tracker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tracker.cpp; sourceTree = "<group>"; };
 		841F4CCF1198A56300F742D2 /* OpenCV.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenCV.framework; path = /Users/admin/Library/Frameworks/OpenCV.framework; sourceTree = "<absolute>"; };
+		84B889FB11A09983000505B5 /* client.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = client.c; sourceTree = "<group>"; };
 		8DD76F6C0486A84900D96B5E /* CS225 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CS225; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6859E8B029090EE04C91782 /* CS225.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = CS225.1; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,6 +63,7 @@
 		08FB7795FE84155DC02AAC07 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				84B889FB11A09983000505B5 /* client.c */,
 				08FB7796FE84155DC02AAC07 /* main.cpp */,
 				841E47A8119F6ABD005F4038 /* tracker.h */,
 				841E47A9119F6ABD005F4038 /* tracker.cpp */,
@@ -129,6 +132,7 @@
 			files = (
 				8DD76F650486A84900D96B5E /* main.cpp in Sources */,
 				841E47AA119F6ABD005F4038 /* tracker.cpp in Sources */,
+				84B889FC11A09983000505B5 /* client.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

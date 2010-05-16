@@ -17,18 +17,35 @@ public:
 	CvRect selection;
 	CvPoint origin;
 	
-	Tracker(char* name, int cameraIndex, CvMouseCallback on_mouse);
+	Tracker(char* name, int cameraIndex, CvMouseCallback on_mouse, float physical_width = 4.0, float physical_height = 3.0);
 	~Tracker();
+	
 	void nextFrame();
 	void processMostRecentFrame();
 	void handleSelectionEvents();
 	void displayImage();
 	void printTrackedObjectProperties();
+	void switchBackProjectMode();
+	void switchShowTrackingWindow();
+	void reset();
+	void stopTracking();
 	void cleanUp();
 	
+	bool isTracking();
+	
+	float getPhysicalWidth();
+	float getPhysicalHeight();
 	float getDx();
 	float getDy();
+	float getDt();
+	float getDxMeters();
+	float getDyMeters();
+	
+	float getVxMeters();
+	float getVyMeters();
+	
 	CvPoint2D32f getCenter();
+	CvPoint2D32f getCenterMeters();
 	
 	
 	static CvScalar hsv2rgb( float hue ) {
@@ -64,15 +81,25 @@ private:
 	CvBox2D last_track_box;
 	CvConnectedComp track_comp;
 	
+	int backproject_mode;
+	int show_tracking_window;
+	
 	int first_iter;
 	float dx;
 	float dy;
+	float dt;
+	
+	float width, height;
+	float meters_per_pixel_x;
+	float meters_per_pixel_y;
 	
 	int hdims;
 	float hranges_arr[2];
 	
-	//void on_mouse(int event, int x, int y, int flags, void*param);
+	float start_clock;
+	
 	void initializeImageVariables(IplImage *frame);
+	void printProperties();
 };
 
 #endif

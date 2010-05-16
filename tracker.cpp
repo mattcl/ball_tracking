@@ -9,9 +9,9 @@
 #include <OpenCV/highgui.h>
 
 
-Tracker::Tracker(char* mname, int cameraIndex, CvMouseCallback on_mouse) {
+Tracker::Tracker(char* name, int cameraIndex, CvMouseCallback on_mouse, float physical_width, float physical_height) {
 	// initialize all variables
-	name = mname;
+	this->name = name;
 	select_object = 0;
 	track_object = 0;
 	vmin = 10;
@@ -30,9 +30,20 @@ Tracker::Tracker(char* mname, int cameraIndex, CvMouseCallback on_mouse) {
 	hranges_arr[0] = 0;
 	hranges_arr[1] = 180;
 	
+	backproject_mode = 0;
+	show_tracking_window = 0;
+	
 	first_iter = 1;
 	dx = 0;
 	dy = 0;
+	dt = 0;
+	
+	width = physical_width;
+	height = physical_height;
+	
+	
+	
+	start_clock = clock();
 	
 	// set up the camera capture/window/trackbars
 	capture = cvCaptureFromCAM(cameraIndex);
@@ -71,6 +82,7 @@ void Tracker::processMostRecentFrame() {
 		
 		
 		if( track_object < 0 ) {
+			start_clock = clock();
 			float max_val = 0.f;
 			cvSetImageROI( hue, selection );
 			cvSetImageROI( mask, selection );
@@ -103,21 +115,31 @@ void Tracker::processMostRecentFrame() {
 		
 		
 		// draw the backprojection only
-		if (true) {
+		if (backproject_mode) {
 			cvCvtColor(backproject, img, CV_GRAY2BGR);
 		}
 		
+		
+		if(show_tracking_window) {
+			// draw a rectangle representing the tracking window
+			cvRectangle(img, cvPoint(track_window.x, track_window.y), 
+						cvPoint(track_window.x + track_window.width, track_window.y + track_window.height), 
+						CV_RGB(0, 0, 255), 2, CV_AA, 0);
+		}
+		
 		// draw a circle around the center of the object
-		cvCircle(img, cvPointFrom32f(track_box.center), 10, CV_RGB(225, 0, 0), 1, CV_AA, 0);
+		cvCircle(img, cvPointFrom32f(track_box.center), 10, CV_RGB(225, 0, 0), 2, CV_AA, 0);
 		
 		if (!first_iter) {
 			// compute dx and dy for this iteration
 			dx = track_box.center.x - last_track_box.center.x;
-			dy = track_box.center.y - last_track_box.center.y;
+			dy = -(track_box.center.y - last_track_box.center.y);
 		} else {
 			first_iter = 0;
 		}
-		
+		float cclock = clock();
+		dt = (cclock - start_clock) / CLOCKS_PER_SEC;
+		start_clock = cclock;
 		last_track_box = track_box;
 	}
 }
@@ -136,8 +158,30 @@ void Tracker::displayImage() {
 
 void Tracker::printTrackedObjectProperties() {
 	if (track_object) {
-		printf("%s: Object at (%f, %f), dx = %f, dy = %f\n", name, track_box.center.x, track_box.center.y, dx, dy );
+		printf("%s: Object at (%f, %f), dx = %f, dy = %f, dt = %f\n", name, track_box.center.x, track_box.center.y, dx, dy, dt);
 	}
+}
+
+void Tracker::switchBackProjectMode() {
+	backproject_mode ^= 1;
+}
+
+void Tracker::switchShowTrackingWindow() {
+	show_tracking_window ^= 1;
+}
+
+void Tracker::reset() {
+	if (track_object) {
+		track_window.x = 5;
+		track_window.y = 5;
+		track_window.width = img->width - 10;
+		track_window.height = img->height - 10;
+	}
+}
+
+void Tracker::stopTracking() {
+	track_object = 0;
+	cvZero(histimg);
 }
 
 void Tracker::cleanUp() {
@@ -145,18 +189,57 @@ void Tracker::cleanUp() {
 	cvDestroyWindow(name);
 }
 
+bool Tracker::isTracking() {
+	return (track_object);
+}
+
+float Tracker::getPhysicalWidth() {
+	return width;
+}
+
+float Tracker::getPhysicalHeight() {
+	return height;
+}
+
 float Tracker::getDx() {
 	return dx;
+}
+
+float Tracker::getDxMeters() {
+	return dx * meters_per_pixel_x;
+}
+
+float Tracker::getVxMeters() {
+	return getDxMeters() / dt;
 }
 
 float Tracker::getDy() {
 	return dy;
 }
 
+float Tracker::getDyMeters() {
+	return dy * meters_per_pixel_y;
+}
+
+float Tracker::getVyMeters() {
+	return getDyMeters() / dt;
+}
+
+float Tracker::getDt() {
+	return dt;
+}
+
 CvPoint2D32f Tracker::getCenter() {
 	if(track_object)
 		return track_box.center;
 	return cvPoint2D32f(0, 0);
+}
+
+CvPoint2D32f Tracker::getCenterMeters() {
+	CvPoint2D32f pt = getCenter();
+	pt.x = width - pt.x * meters_per_pixel_x;
+	pt.y = height - pt.y * meters_per_pixel_y;
+	return pt;
 }
 
 // Private Methods
@@ -171,6 +254,15 @@ void Tracker::initializeImageVariables(IplImage *frame) {
 	hist = cvCreateHist(1, &hdims, CV_HIST_ARRAY, &hranges, 1);
 	histimg = cvCreateImage(cvSize(320, 200), 8, 3);
 	cvZero(histimg);
+	meters_per_pixel_x = width / cvGetSize(frame).width;
+	meters_per_pixel_y = height / cvGetSize(frame).height;
+	printProperties();
+}
+
+void Tracker::printProperties() {
+	printf("%s: image size (pixels): %d x %d, physical size (m): %f x %f\n", 
+		   name, cvGetSize(img).width, cvGetSize(img).height, width, height);
+	printf("meters per pixel (x, y): (%f, %f)\n----\n", meters_per_pixel_x, meters_per_pixel_y);
 }
 
 

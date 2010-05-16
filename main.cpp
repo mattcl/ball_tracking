@@ -5,45 +5,110 @@
 #include <ctype.h>
 #include "tracker.h"
 
+extern "C" int connect_client();
+
+struct BallProfile {
+	float vx;		// m/s
+	float vy;		// m/s
+	float vz;		// m/s
+	float centerX;  // m
+	float centerY;  // m
+	float centerZ;  // m
+};
+
+int debug = 0, debug_1 = 0, debug_2 = 0, debug_profile = 0;
+
 void on_mouse(int event, int x, int y, int flags, void*param);
 
 int main (int argc, char * const argv[]) {
+	float x_offset = 1.7;
+	float y_offset = .25;
+	float z_offset = .68;
 	
-	Tracker topCamera("top camera", 2, on_mouse);
-	Tracker sideCamera("side camera", 1, on_mouse);
+	connect_client();
+	
+	
+	Tracker frontCamera("front camera", 2, on_mouse, 2.04, 1.64);
+	Tracker sideCamera("side camera", 1, on_mouse, 2.04, 1.64);
+	
+	BallProfile currentProfile;
 	
 	printf("starting, pres ESC to quit\n");
-	double startClock = clock();
+	float startClock = clock();
 	long i = 0;
+	int c;
 	for(;;i++) {
-		topCamera.nextFrame();
+		frontCamera.nextFrame();
 		sideCamera.nextFrame();
 		
-		topCamera.processMostRecentFrame();
+		frontCamera.processMostRecentFrame();
 		sideCamera.processMostRecentFrame();
 		
-		topCamera.handleSelectionEvents();
+		frontCamera.handleSelectionEvents();
 		sideCamera.handleSelectionEvents();
 		
 		
-		topCamera.displayImage();
+		frontCamera.displayImage();
 		sideCamera.displayImage();
 		
-		/*
-		// save images
-		char name1[255], name2[255];
-		sprintf(name1, "top%i.jpg", i);
-		sprintf(name2, "side%i.jpg", i);
-		cvSaveImage(name1,topFrame);
-		cvSaveImage(name2, sideFrame);
-		 */
-		
-		// check for end signal ("ESC" key)
-		if((char) cvWaitKey(10) == 27) {
-			break;
+		if (frontCamera.isTracking() && sideCamera.isTracking()) {
+			currentProfile.vx = sideCamera.getVxMeters();
+			currentProfile.vy = frontCamera.getVyMeters();
+			currentProfile.vz = frontCamera.getVyMeters();
+			currentProfile.centerZ = frontCamera.getCenterMeters().y + z_offset - frontCamera.getPhysicalHeight() / 2;
+			currentProfile.centerY = frontCamera.getCenterMeters().x - y_offset - frontCamera.getPhysicalWidth() / 2;
+			currentProfile.centerX = sideCamera.getCenterMeters().x + x_offset - sideCamera.getPhysicalWidth() / 2;
+			
 		}
 		
-		                                                                
+		if (debug) {
+			if(debug_1) frontCamera.printTrackedObjectProperties();
+			if(debug_2) sideCamera.printTrackedObjectProperties();
+			if(debug_profile && frontCamera.isTracking() && sideCamera.isTracking()) {
+				printf("pos (%f, %f, %f), vel (%f, %f, %f)\n", currentProfile.centerX, currentProfile.centerY, currentProfile.centerZ,
+					   currentProfile.vx, currentProfile.vy, currentProfile.vz);
+			}
+		}
+		
+		// check for end signal ("ESC" key)
+		c = cvWaitKey(10);
+		if ((char) c == 27) {
+			break;
+		}
+		switch ((char) c) {
+			case 'b':
+				frontCamera.switchBackProjectMode();
+				sideCamera.switchBackProjectMode();
+				break;
+			case 'w':
+				frontCamera.switchShowTrackingWindow();
+				sideCamera.switchShowTrackingWindow();
+				break;
+			case 'r':
+				frontCamera.reset();
+				sideCamera.reset();
+				break;
+			case '0':
+				frontCamera.stopTracking();
+				sideCamera.stopTracking();
+				break;
+
+			case 'd':
+				debug ^= 1;
+				break;
+			case '1':
+				debug_1 ^= 1;
+				break;
+			case '2':
+				debug_2 ^= 1;
+				break;
+			case '3':
+				debug_profile ^= 1;
+				break;
+
+			default:
+				break;
+		}
 	}
 	
 	// compute average effective fps
@@ -52,7 +117,7 @@ int main (int argc, char * const argv[]) {
 		
 	// clean up
 	printf("cleaning up");
-	topCamera.cleanUp();
+	frontCamera.cleanUp();
 	sideCamera.cleanUp();
     return 0;
 }
