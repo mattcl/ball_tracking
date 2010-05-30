@@ -14,9 +14,9 @@ Tracker::Tracker(char* name, int cameraIndex, CvMouseCallback on_mouse, float ph
 	this->name = name;
 	select_object = 0;
 	track_object = 0;
-	vmin = 10;
+	vmin = 117;
 	vmax = 256;
-	smin = 30;
+	smin = 184;
 	
 	img         = 0;
 	hsv         = 0;
@@ -41,7 +41,14 @@ Tracker::Tracker(char* name, int cameraIndex, CvMouseCallback on_mouse, float ph
 	width = physical_width;
 	height = physical_height;
 	
+	r_mode = 0;
+	b_mode = 0;
+	g_mode = 0;
 	
+	double hScale=1.0;
+	double vScale=1.0;
+	int    lineWidth=1;
+	cvInitFont(&font, (CV_FONT_HERSHEY_SIMPLEX | CV_FONT_ITALIC) , hScale,vScale,0,lineWidth);
 	
 	start_clock = clock();
 	
@@ -52,11 +59,14 @@ Tracker::Tracker(char* name, int cameraIndex, CvMouseCallback on_mouse, float ph
 	cvCreateTrackbar("Vmin", name, &vmin, 256, 0);
 	cvCreateTrackbar("Vmax", name, &vmax, 256, 0);
 	cvCreateTrackbar("Smin", name, &smin, 256, 0);
-	
 }
 
 Tracker::~Tracker() {
 	
+}
+
+void Tracker::moveWindow(int x, int y) {
+	cvMoveWindow(name, x, y);
 }
 
 void Tracker::nextFrame() {
@@ -71,10 +81,21 @@ void Tracker::nextFrame() {
 	}
 	
 	cvCopy(frame, img, 0);
-	cvCvtColor(img, hsv, CV_BGR2HSV);
 }
 
 void Tracker::processMostRecentFrame() {
+	// do preprocessing color filtering;
+	if (r_mode || g_mode || b_mode) {
+		cvSplit(img, b_img, g_img, r_img, 0);
+		if(!r_mode) cvZero(r_img);
+		if(!g_mode) cvZero(g_img);
+		if(!b_mode) cvZero(b_img);
+		cvMerge(b_img, g_img, r_img, 0, merge_img);
+		cvCopy(merge_img, img, 0);
+	}
+	
+	cvCvtColor(img, hsv, CV_BGR2HSV);
+	
 	if (track_object) {
 		int _vmin = vmin, _vmax = vmax;
 		cvInRangeS(hsv, cvScalar(0, smin, MIN(_vmin, _vmax), 0), cvScalar(180, 256, MAX(_vmin, _vmax), 0), mask);
@@ -105,13 +126,19 @@ void Tracker::processMostRecentFrame() {
 							cvPoint((j+1)*bin_w,histimg->height - val),
 							color, -1, 8, 0 );
 			}
+			saveHistogramAndMask();
+			
 		}
 		
 		cvCalcBackProject(&(hue), backproject, hist);
 		cvAnd(backproject, mask, backproject, 0);
 		
 		cvCamShift(backproject, track_window, cvTermCriteria(CV_TERMCRIT_EPS | CV_TERMCRIT_ITER, 10, 1), &track_comp, &track_box);
-		track_window = track_comp.rect;
+		//track_window = track_comp.rect;
+		track_window.x = 1;
+		track_window.y = 1;
+		track_window.width = img->width - 2;
+		track_window.height = img->height - 2;
 		
 		
 		// draw the backprojection only
@@ -127,8 +154,12 @@ void Tracker::processMostRecentFrame() {
 						CV_RGB(0, 0, 255), 2, CV_AA, 0);
 		}
 		
+		//cvPutText(img, "Test", cvPoint(0, 10), &font, CV_RGB(0,225,0));
+		
+		
 		// draw a circle around the center of the object
 		cvCircle(img, cvPointFrom32f(track_box.center), 10, CV_RGB(225, 0, 0), 2, CV_AA, 0);
+		
 		
 		if (!first_iter) {
 			// compute dx and dy for this iteration
@@ -170,6 +201,20 @@ void Tracker::switchShowTrackingWindow() {
 	show_tracking_window ^= 1;
 }
 
+void Tracker::switchColorMode(char m) {
+	switch(m) {
+	case 'r':
+		r_mode ^= 1;
+		break;
+	case 'g':
+		g_mode ^= 1;
+		break;
+	case 'b':
+		b_mode ^= 1;
+		break;
+	}
+}
+
 void Tracker::reset() {
 	if (track_object) {
 		track_window.x = 5;
@@ -193,12 +238,20 @@ bool Tracker::isTracking() {
 	return (track_object);
 }
 
-float Tracker::getPhysicalWidth() {
-	return width;
+float Tracker::getPixelWidth() {
+	return img->width;
 }
 
-float Tracker::getPhysicalHeight() {
-	return height;
+float Tracker::getPixelHeight() {
+	return img->height;
+}
+
+float Tracker::getConversionX() {
+	return meters_per_pixel_x;
+}
+
+float Tracker::getConversionY() {
+	return meters_per_pixel_y;
 }
 
 float Tracker::getDx() {
@@ -242,10 +295,40 @@ CvPoint2D32f Tracker::getCenterMeters() {
 	return pt;
 }
 
+void Tracker::saveHistogramAndMask() {
+	sprintf(hist_w, "%s_hist.xml", name);
+	cvSave(hist_w, hist);
+	
+	sprintf(mask_w, "%s_mask.xml", name);
+	cvSave(mask_w, mask);
+}
+
+void Tracker::loadHistogramAndMask() {
+	sprintf(hist_w, "%s_hist.xml", name);
+	sprintf(mask_w, "%s_mask.xml", name);
+	hist = (CvHistogram *)cvLoad(hist_w);
+	mask = (IplImage *)cvLoad(mask_w);
+	if(hist && mask) {
+		track_object = 1;
+		cvResetImageROI( mask );
+		reset();
+	}
+}
+
+void Tracker::printSliderValues() {
+	printf("name: %s, vmin: %d, vmax: %d, smin: %d\n", name, vmin, vmax, smin);
+}
+
 // Private Methods
 void Tracker::initializeImageVariables(IplImage *frame) {
 	img = cvCreateImage(cvGetSize(frame), 8, 3);
 	img->origin = frame->origin;
+	
+	r_img = cvCreateImage(cvGetSize(frame), 8, 1);
+	g_img = cvCreateImage(cvGetSize(frame), 8, 1);
+	b_img = cvCreateImage(cvGetSize(frame), 8, 1);
+	merge_img = cvCreateImage(cvGetSize(frame), 8, 3);
+	
 	hsv = cvCreateImage(cvGetSize(frame), 8, 3);
 	hue = cvCreateImage(cvGetSize(frame), 8, 1);
 	mask = cvCreateImage(cvGetSize(frame), 8, 1);

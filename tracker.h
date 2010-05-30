@@ -8,6 +8,8 @@
 
 #include <OpenCV/cv.h>
 #include <OpenCV/highgui.h>
+#include <time.h>
+#include <stdio.h>
 
 class Tracker {
 public:
@@ -20,6 +22,8 @@ public:
 	Tracker(char* name, int cameraIndex, CvMouseCallback on_mouse, float physical_width = 4.0, float physical_height = 3.0);
 	~Tracker();
 	
+	void moveWindow(int x, int y);
+	
 	void nextFrame();
 	void processMostRecentFrame();
 	void handleSelectionEvents();
@@ -27,14 +31,17 @@ public:
 	void printTrackedObjectProperties();
 	void switchBackProjectMode();
 	void switchShowTrackingWindow();
+	void switchColorMode(char m);
 	void reset();
 	void stopTracking();
 	void cleanUp();
 	
 	bool isTracking();
 	
-	float getPhysicalWidth();
-	float getPhysicalHeight();
+	float getPixelWidth();
+	float getPixelHeight();
+	float getConversionX();
+	float getConversionY();
 	float getDx();
 	float getDy();
 	float getDt();
@@ -47,6 +54,9 @@ public:
 	CvPoint2D32f getCenter();
 	CvPoint2D32f getCenterMeters();
 	
+	void printSliderValues();
+	void saveHistogramAndMask();
+	void loadHistogramAndMask();
 	
 	static CvScalar hsv2rgb( float hue ) {
 		int rgb[3], p, sector;
@@ -65,7 +75,13 @@ public:
 	}
 private:
 	char* name;
+	char hist_w[256];
+	char mask_w[256];
 	CvCapture *capture;
+	
+	CvFont font;
+	
+	IplImage *r_img, *b_img, *g_img, *merge_img;
 	
 	IplImage *hsv;
 	IplImage *hue;
@@ -83,6 +99,8 @@ private:
 	
 	int backproject_mode;
 	int show_tracking_window;
+	
+	int r_mode, g_mode, b_mode;
 	
 	int first_iter;
 	float dx;

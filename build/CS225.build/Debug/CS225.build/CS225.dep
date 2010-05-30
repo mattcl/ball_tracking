@@ -1,7 +1,7 @@
-00000000019ec3ee0000000000005702 29955661b3334b7278d0c48494fe7059 ffffffffffffffffffffffffffffffff 5436 /Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/Objects-normal/i386/client.o
-00000000000000130000000000001ff1 47b2864f7472a53f33c4d13b3375a485 ffffffffffffffffffffffffffffffff 76692 /Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/Objects-normal/i386/tracker.o
-000000000000ff720000000000006573 e2b2d65dea3a61368dd821d3f5a87181 ffffffffffffffffffffffffffffffff 65772 /Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/Objects-normal/i386/main.o
-8c9506732db7be25c6cc346c52d28807 5a45c2755dddaa3fef6b03998d6d115f ffffffffffffffffffffffffffffffff 37416 /Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug/CS225
+00000000019954f60000000000006328 29955661b3334b7278d0c48494fe7059 ffffffffffffffffffffffffffffffff 5688 /Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/Objects-normal/i386/client.o
+0000000000068be900000000000040aa 47b2864f7472a53f33c4d13b3375a485 ffffffffffffffffffffffffffffffff 83716 /Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/Objects-normal/i386/tracker.o
+000000004a76d6b70000000000003556 e2b2d65dea3a61368dd821d3f5a87181 ffffffffffffffffffffffffffffffff 71544 /Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/Objects-normal/i386/main.o
+8c95067367c08b02c6cc346c52d2b353 5a45c2755dddaa3fef6b03998d6d115f ffffffffffffffffffffffffffffffff 44152 /Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Debug/CS225
 000000000000004100000000000013f3 237245d14e12014c995dd7e4834bed59 ffffffffffffffffffffffffffffffff 76420 /Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/Objects-normal/x86_64/tracker.o
 000000000000088400000000000061e3 6540ec0805bff6f0e3cc152c71f75c65 ffffffffffffffffffffffffffffffff 63540 /Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/Objects-normal/x86_64/main.o
 ffffffffffffffffffffffffffffffff 2d67ee75d3c0d6ff43e7cf491dcdcddd ffffffffffffffffffffffffffffffff 0 /Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Debug/CS225.build/Objects-normal/i386/Tracker.o

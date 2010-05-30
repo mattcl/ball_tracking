@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<opencv_storage>
+<front_camera_hist type_id="opencv-hist">
+  <type>0</type>
+  <is_uniform>1</is_uniform>
+  <have_ranges>1</have_ranges>
+  <mat type_id="opencv-nd-matrix">
+    <sizes>
+      16</sizes>
+    <dt>f</dt>
+    <data>
+      255. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.</data></mat>
+  <thresh>
+    0. 180.</thresh></front_camera_hist>
+</opencv_storage>
