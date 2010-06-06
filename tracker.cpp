@@ -160,6 +160,12 @@ void Tracker::processMostRecentFrame() {
 		// draw a circle around the center of the object
 		cvCircle(img, cvPointFrom32f(track_box.center), 10, CV_RGB(225, 0, 0), 2, CV_AA, 0);
 		
+		CvSize2D32f size = track_box.size;
+		
+		CvPoint pt = cvPoint((int) (track_box.center.x - size.width/2), (int) track_box.center.y - size.height/2);
+		
+		cvRectangle(img, pt, cvPoint(pt.x + size.width, pt.y + size.height), CV_RGB(0, 255, 0), 2, CV_AA, 0);
+		
 		
 		if (!first_iter) {
 			// compute dx and dy for this iteration

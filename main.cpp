@@ -101,6 +101,8 @@ int main (int argc, char * const argv[]) {
 	
 	processArgs(argc, argv);
 	
+	float lastX = 2.0;
+	
 	int newsockfd;
 	char buffer [256];
 	if(connect) {
@@ -154,20 +156,68 @@ int main (int argc, char * const argv[]) {
 		}
 		
 		if (frontCamera.isTracking() && topCamera.isTracking()) {
+			
+			float xos = -2.209;
+			float yos = -0.27;
+			float zos = -2.55;
+			float xot = -2.3495;
+			float yot = 0.34;
+			float zot = -1.29;
+			
+			float cxs = 149.9492060878939412;
+			float cys = 108.1980667440229666;
+			float cxt = 149.9492060878939412;
+			float cyt = 108.1980667440229666;
+			
+			float fxs = 264.8570031668078855;
+			float fys = 264.2436888796606809;
+			float fxt = 264.8570031668078855;
+			float fyt = 264.2436888796606809;
+			
+			float us = frontCamera.getCenter().x;
+			float vs = frontCamera.getCenter().y;
+			float ut = topCamera.getCenter().x;
+			float vt = topCamera.getCenter().y;
+			
+			float a = 1/fxs * (us - cxs);
+			float b = 1/fys * (vs - cys);
+			float c = 1/fxt * (ut - cxt);
+			float d = 1/fyt * (vt - cyt);
+			float e = zos + yot;
+			float f = zot - yos;
+			
+			float xs = a * (e - d * f) / (1 + b * d);
+			float ys = b * (e - d * f) / (1 + b * d);
+			float zs = (e - d * f) / (1 + b * d);
+			
+			
+			float X = -(xos - xs);
+			float Y = -(zos - zs);
+			float Z = -(yos - ys);
+			
 			gettimeofday(&tim, NULL);
 			double curTime = tim.tv_sec+(tim.tv_usec/1000000.0);
 			currentProfile.vx = (clock() - startClock)/CLOCKS_PER_SEC;
 			currentProfile.vy = curTime - startTime;
 			currentProfile.vz = frontCamera.getVyMeters();
 			currentProfile.centerZ = (frontCamera.getPixelHeight() / 2 - frontCamera.getCenter().y)*frontCamera.getConversionY() + z_offset;
-			currentProfile.centerY = 0;
+			currentProfile.centerY = 0.15;
 			currentProfile.centerX = (frontCamera.getPixelWidth() / 2 - frontCamera.getCenter().x)*frontCamera.getConversionX() + x_offset;
+			
+			currentProfile.vx = -(currentProfile.centerX - lastX);
+			
+			if (lastX < 1.0 && debug_profile) {
+				printf("stopping...\n");
+				debug_profile = 0;
+			}
+			lastX = currentProfile.centerX;
 		}
 		
 		if (debug) {
 			//if(debug_1) frontCamera.printTrackedObjectProperties();
 			//if(debug_2) topCamera.printTrackedObjectProperties();
 			if(debug_profile && frontCamera.isTracking() && topCamera.isTracking()) {
+				
 				sprintf(buffer,"%35d %35d %35d %35d %35d %35d %35d   \n",
 						(int)(s),
 						(int)(1000000*currentProfile.centerX),
@@ -180,11 +230,14 @@ int main (int argc, char * const argv[]) {
 				//printf("%s", buffer);
 				//memcpy(buffer, &currentProfile, sizeof(currentProfile));
 				if (debug_1) {
+					if (currentProfile.centerX == 2.21f && currentProfile.centerZ == 0.32f) {
+						printf("not sending: ");
+					}
 					printf("%d pos (%f, %f, %f), vel (%f, %f, %f)\n", s, currentProfile.centerX, currentProfile.centerY, currentProfile.centerZ,
 						   currentProfile.vx, currentProfile.vy, currentProfile.vz);
 				}
 				//printf("%s",buffer);
-				if (connect) {
+				if (connect && currentProfile.centerX != 2.21f && currentProfile.centerZ != 0.32f) {
 					try {
 						write_client(newsockfd, buffer, strlen(buffer));
 					}

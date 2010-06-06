@@ -9,7 +9,7 @@
       16</sizes>
     <dt>f</dt>
     <data>
-      255. 3.35526323 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 33.55263138</data></mat>
+      255. 255. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.</data></mat>
   <thresh>
     0. 180.</thresh></top_camera_hist>
 </opencv_storage>

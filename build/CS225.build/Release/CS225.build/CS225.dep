@@ -1,8 +1,8 @@
-00000000000000000000000000000000 7aa37315752eb1c8642a2392e909dbeb ffffffffffffffffffffffffffffffff 102 /Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Release/CS225.dSYM
-0f7ae6e080ccb3fec30fddcbb8e48d50 109546e7499064f862716ac281d9ce5c ffffffffffffffffffffffffffffffff 31824 /Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Release/CS225
-000000004d89691700000000000008d7 4953634a852cba15fdd75db558aa5896 ffffffffffffffffffffffffffffffff 67968 /Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Release/CS225.build/Objects-normal/i386/main.o
 00000000066f3bbc0000000000006352 40894f8e3945f17ee0059ecf2f535425 ffffffffffffffffffffffffffffffff 5888 /Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Release/CS225.build/Objects-normal/i386/client.o
-0000000007fab33600000000000040aa 06a0ca2471eb14d9dedd1eb1cfecaa16 ffffffffffffffffffffffffffffffff 74108 /Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Release/CS225.build/Objects-normal/i386/tracker.o
+0000000007fea9ff0000000000007fa9 06a0ca2471eb14d9dedd1eb1cfecaa16 ffffffffffffffffffffffffffffffff 74612 /Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Release/CS225.build/Objects-normal/i386/tracker.o
+000000004d8f3280000000000000054a 4953634a852cba15fdd75db558aa5896 ffffffffffffffffffffffffffffffff 68712 /Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Release/CS225.build/Objects-normal/i386/main.o
+00000000000000000000000000000000 7aa37315752eb1c8642a2392e909dbeb ffffffffffffffffffffffffffffffff 102 /Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Release/CS225.dSYM
+0f7ae6e080cef2a0c30fddcbb8e4bfce 109546e7499064f862716ac281d9ce5c ffffffffffffffffffffffffffffffff 31824 /Users/admin/Documents/XCode Projects/OpenCV/CS225/build/Release/CS225
 00000000019954f60000000000006328 3aea0899eff6256a6b9d91f785eec844 ffffffffffffffffffffffffffffffff 6116 /Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Release/CS225.build/Objects-normal/ppc/client.o
 00000000019954f60000000000006328 17ce89688a7eeb3941501abba3f04925 ffffffffffffffffffffffffffffffff 7332 /Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Release/CS225.build/Objects-normal/x86_64/client.o
 0000000000068be900000000000040aa 60f58ef5965015a0bd3a311439738908 ffffffffffffffffffffffffffffffff 75176 /Users/admin/Documents/XCode Projects/OpenCV/CS225/build/CS225.build/Release/CS225.build/Objects-normal/ppc/tracker.o
